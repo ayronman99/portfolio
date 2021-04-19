@@ -1,0 +1,66 @@
+
+/* Home Page Design*/
+.home {
+    font-family: 'Metrophobic', sans-serif;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+    .intro{
+        margin-top: 3.5rem;
+        width: 100%;
+        padding:1em;
+
+        h1{
+            padding-bottom: 7.5px;
+        }
+    }
+ }
+
+ .goto-about{
+    
+    position: relative;
+    width: 120px;
+    top: 30px;
+    left: 120px;
+    a{
+        color:#fff;
+        text-decoration: none;
+        width: 20px;
+        background-color: red;
+    }
+    div{
+        padding-top: 6.5px;
+        padding-left: 8px;
+        width: 120px;
+        height:35px;
+        background-color: rgb(110, 76, 231);
+        border-radius: 5px;
+        &::after{
+            content: '';
+            position: relative;
+            width: 0.8rem;
+            height: 0.8rem;
+            border-right: .1em solid #fff;
+            border-bottom: .1em solid #fff;
+            transition: transform 0.5s ease-in-out;
+            transform: rotate(-45deg);
+            display: inline-block;
+            }
+            &:hover::after, &:focus::after {
+                transform: rotate(45deg);
+                margin-left: 3px;
+                transition: transform 0.45s ease-in-out;
+            }
+    }
+}  
+
+    .coderhandler{
+        width: 100%;
+
+        img{
+            display:block;
+            width: 100%;
+        }
+    }

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Leenard's Portfolio site"
+    />
+    <link rel="icon" href="./images/Lelot.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css"
+    >
+
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <title>Portfolio</title>
+</head>
+<body>
+   <div class='main-container'>
+       
+       <nav class='navibar'>
+        <h1 class='brand-logo'>Lee</h1>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="burger-btn">
+            <i class="fa fa-bars"></i>
+          </label>
+                <ul class='nav-menu'>
+                    <a href='#home'>Home</a>
+                    <a href='#about'>About</a>
+                    <a href='#projects'>Projects</a>
+                    <a href='#contact'>Contact</a>
+            <label for="chk" class="close-btn">
+                <i class="fa fa-times"></i>
+             </label>
+                </ul>
+        </nav>
+             <!-- Home section down here -->
+        <div class='home' id='home'>
+            <div class='intro'>
+                <h1>Hi! My name is Lee.</h1>
+                <p>Welcome to my portfolio!</p>
+                <br />
+                <p>Whether you're looking to attract prospect and potential clients or just show the world your masterpiece. I can help you in creating your dream website.</p>
+            </div>
+           
+
+            <div class='coderhandler'>
+                <img src='./images/skills/buildweb.svg'
+                  alt='build websites'
+                ></img>
+              </div>
+
+              <div class='goto-about'>
+                <a  href='#about'>
+                    <div class='goto-handler'> Know more </div>
+                </a>
+            </div>
+        </div>
+
+
+        <!-- About me down here -->
+        <div class='about' id='about'>
+            <div class="about-info">
+                <h2>
+                    About Me
+                </h2>
+
+                <p>I'm a self-taught front-end web developer.</p>
+                <p>
+                    I am very passionate about technology wether it be hardware or software. I love what I do. </p> 
+                <p class='breaker'>
+                    I like to create websites that are simple, effective, and straight to the point. Making it easy for customer to wander around.
+                </p> 
+                
+                <h3>Skills:</h3>
+           </div>
+            <div class='skills-container'>
+                
+                <div class='skills chtml5'>
+                   <p><strong>HTML</strong></p>
+                        <img src="./images/skills/html5.png" alt="html5" />       
+                </div>
+                 
+                <div class='skills ccss3'>
+                    <p><strong>CSS</strong></p>
+                         <img src="./images/skills/css3.png" alt="css3" />       
+                 </div>
+                  
+                 <div class='skills javasc'>
+                    <p><strong>Javascript</strong></p>
+                         <img src="./images/skills/js.png" alt="javascript" />       
+                 </div>
+                   
+                 <div class='skills creact'>
+                    <p><strong>React</strong></p>
+                         <img src="./images/skills/react.png" alt="reactjs"  />       
+                 </div>
+
+                 <div class='skills csass'>
+                    <p><strong>SASS</strong></p>
+                         <img src="./images/skills/sass.png" alt="sass" />       
+                 </div>
+                   
+             </div>
+
+             <div class='certholder'>
+                <h2>Certificates</h2>
+                <p> These are my certs that I acquired from 
+                    <a
+                    class='freecc'
+                    href="freecodecamp.org"
+                    target="_blank"
+                    rel="noreferrer"
+                    >FreeCodeCamp</a></p>
+
+                <div class="fcc-carou">
+                    <button class="carou-clicker to-left go-hide">
+                        <img src="./images/icons/backicon.png" alt="click left">
+                    </button>
+
+                    <div class="carou-container">
+                        <ul class="carou-holder">
+                            <li class="fcc-cert curr-slide">
+                                <a
+                                 href="https://www.freecodecamp.org/certification/fcc723415ed-e832-403f-838b-e58b11ace1ea/front-end-libraries"
+                                 target="_blank"
+                                 rel="noreferrer"
+                                >
+                                <img src="./images/FccCert/FEL.jpg" alt="Front End Library Certificate">
+                            </a>
+                        </li>
+                            <li class="fcc-cert">
+                                <a
+                                 href="https://www.freecodecamp.org/certification/fcc723415ed-e832-403f-838b-e58b11ace1ea/javascript-algorithms-and-data-structures"
+                                 target="_blank"
+                                 rel="noreferrer"
+                                >
+                                <img src="./images/FccCert/JSALGNDS.jpg" alt="Javascript Algorithm and Data Structure Certificate">
+                            </a>
+                        </li>
+                            <li class="fcc-cert">
+                                <a
+                                 href="https://www.freecodecamp.org/certification/fcc723415ed-e832-403f-838b-e58b11ace1ea/responsive-web-design"
+                                 target="_blank"
+                                 rel="noreferrer"
+                                >
+                                <img src="./images/FccCert/RWD.jpg" alt="Responsive Web Design Certificate">
+                            </a>
+                        </li>
+                        </ul>
+                    </div>
+
+                    <button class="carou-clicker to-right">
+                        <img src="./images/icons/nexticon.png" alt="click to right">
+                    </button>
+
+                    <div class="carou-bullet">
+                        <button class="indicator curr-slide"></button>
+                        <button class="indicator"></button>
+                        <button class="indicator"></button>
+                    </div>
+                </div>
+                
+             </div>
+
+        </div>
+
+         <!-- Projects down here -->
+    <div class='projects' id='projects'>
+            <div class="projinfo">
+                <h2>Projects</h2>
+            </div>
+
+        <div class="project-holder">
+            <div class='projitem'>
+                <a 
+                href="https://ayronman99.github.io/Random-Qoute-Generator" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                    <img 
+                    src="./images/projects/RandomQuoteGenerator.png" 
+                    alt="Quote Generator">
+                 </a>
+            </div>
+
+            <div class='projitem'>
+                <a 
+                href="https://ayronman99.github.io/Markdown-Previewer/" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                    <img 
+                    src="./images/projects/MarkdownPreviewer.JPG" 
+                    alt="Markdown Previewer">
+                 </a>
+            </div>
+
+            <div class='projitem'>
+                <a 
+                href="https://ayronman99.github.io/Drum-Pad-Machine/" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                    <img 
+                    src="./images/projects/DpadMachine.JPG" 
+                    alt="Virtual Drumpads">
+                 </a>
+            </div>
+
+            <div class='projitem'>
+                <a 
+                href="#home" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                    <img 
+                    src="./images/projects/JsCalc.JPG" 
+                    alt="A calculator made from JS">
+                 </a>
+            </div>
+
+            <div class='projitem'>
+                <a 
+                href="#home" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                    <img 
+                    src="./images/projects/Pomodoro.JPG" 
+                    alt="Pomodoro Clock made from reactjs">
+                 </a>
+            </div>
+        </div>
+    </div>
+
+
+        <div class='contact' id='contact'>
+            <div class='contact-body'>   
+
+                <div class='contact-start'>
+
+                 <div class="info">
+                    <h2> Hey there! &lt /></h2>
+                    <p>Let me know what you're up to, hit me up!</p>
+                </div>
+                    <form class='contact-form'>
+
+                        <div class="inpholder">
+                            <input class='input' id='fname' name='fname' />
+                            <label for='fname'>Name</label>
+                            <span>Name</span>
+                        </div>
+                        
+                        <div class="inpholder">
+                            <input class='input' id='phone-number' name='phone-number' type='tel'  />
+                            <label for='phone-number'>Phone</label>
+                            <span>Phone</span>
+                        </div>
+
+                        <div class="inpholder">
+                            <input class='input' type="email" id="email" name="email">
+                            <label for="email">Email</label> 
+                            <span>Email</span>
+                        </div>  
+
+                        <div class="inpholder textarea">
+                            <textarea name="message" class='input'></textarea>
+                            <label class='des-mess' for="">Message</label>
+                            <span>Message</span>
+                          </div>
+                          
+                          <button type='button' onclick=notYet()> Submit</button>
+                    </form>
+                </div>
+                    
+                    
+                    
+            </div>
+        </div>
+    </div> 
+
+    <footer class='contact-links'>
+        <div class='git-links'>
+            <a
+                id="profile-link"
+                href="https://github.com/ayronman99"
+                target="_blank"
+                rel="noreferrer"
+                class="contact-details"
+                ><i class="fab fa-github"></i>
+            </a>
+            
+            <a
+                id="profile-link"
+                href="https://www.linkedin.com/in/lee-lacay-5564b51a4/"
+                target="_blank"
+                rel="noreferrer"
+                class="contact-details"
+                ><i class="fab fa-linkedin"></i>
+            </a>
+
+            <a
+                id="profile-link"
+                href="https://github.com/ayronman99"
+                target="_blank"
+                rel="noreferrer"
+                class="contact-details"
+                ><i class="fab fa-twitter"></i>
+            </a>    
+        </div>  
+    </footer>
+</body>
+
+<script  src='./jscripts/pagescript.js'></script>
+
+</html>

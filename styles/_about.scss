@@ -1,0 +1,168 @@
+/* About Page Design*/   
+.about{
+    font-family: 'Nunito', sans-serif;
+    height: 900px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: burlywood;
+    h2{
+      font-size: 32px;
+    }
+    h3{
+      font-size: 28px;
+      padding: 13px 0 17px 0;
+    }  
+}
+.about-info{
+  padding: 10px;
+}
+/* Skills container below*/
+.skills-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 13rem);
+  grid-template-rows: repeat(3, 5rem);
+  grid-gap: 10px;
+  grid-template-areas:
+    ". . chtml5 javasc . ."
+    ". . ccss3 creact . ."
+    ". . csass . . .";
+
+    .skills{ 
+      padding: 0;
+      margin: 0;
+        img{
+          object-fit: contain;
+          width: 80%;
+          height: 80%;
+      }
+    } 
+}
+      .chtml5{
+        grid-area: chtml5;
+      }
+      .ccss3{
+        grid-area: ccss3;
+      }
+      .javasc{
+        grid-area: javasc;
+      }
+      .creact{
+        grid-area: creact;
+      }
+      .csass{
+        grid-area: csass;
+      }
+
+      /*    
+       Certificates 
+       container 
+       below         
+      
+      */
+      .freecc {
+        text-decoration: none;
+        color:hsla(36, 80%, 43%, 0.952);
+        font-weight: 600;
+      }
+
+      .fcc-carou{
+        position:absolute;
+        height: 300px;
+        width: 92%;
+        
+        
+      }
+
+      .carou-container{
+        scroll-snap-type: x mandatory;
+        overflow-x: hidden;
+        position:absolute;
+        top:0;
+        margin: 0 auto;
+        height:100%;
+        width:100%;
+        z-index: 0;
+      }
+
+      .carou-holder{
+        position: relative;
+        list-style: none;
+        margin-left: 10px;
+        width: 100%;
+        height:100%;
+        transition: transform .250s ease-in;
+      }
+      
+      .fcc-cert{
+        position:absolute;
+        width: 100%;
+        height:90%;
+        img{
+          width: 90%;
+          height:100%;
+          object-fit: contain;
+        }
+      }
+
+      .carou-clicker{
+        z-index: 2;
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        outline: none;
+        border: transparent;
+        background-color: transparent;
+        top:50%;
+        transform: translateY(-50%);
+        img{
+          width: 100%;
+          object-fit: contain;
+        }        
+      }
+
+      .to-left{
+        left:-5px;
+      }
+      .to-right{
+        right:-26px;
+      }
+
+      .carou-bullet{
+        position: relative;
+        top: 270px;
+        .curr-slide{
+          background-color: #706fd3;
+        }
+      }
+
+      .indicator{
+        cursor: pointer;
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        margin: 0 4px;
+      }
+      .go-hide{
+        display: none;
+      }
+      
+      @media screen and (max-width: 385px){
+        .about{
+          height: 920px;
+        }
+        .fcc-cert{
+
+          img{
+            object-fit: contain;
+          }
+        }
+
+        .carou-bullet{
+          position: relative;
+          margin-top: -5px;
+          
+        }
+
+      }
+
+      
