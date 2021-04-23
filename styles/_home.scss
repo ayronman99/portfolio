@@ -19,21 +19,20 @@
  }
 
  .goto-about{
-    
     position: relative;
-    width: 120px;
+    width: 100%;
     top: 30px;
-    left: 120px;
+    display: flex;
+    justify-content: center;
     a{
         color:#fff;
         text-decoration: none;
         width: 20px;
-        background-color: red;
     }
     div{
         padding-top: 6.5px;
         padding-left: 8px;
-        width: 120px;
+        width: 100px;
         height:35px;
         background-color: rgb(110, 76, 231);
         border-radius: 5px;

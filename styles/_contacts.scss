@@ -84,6 +84,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     button{
         position: absolute;
         border-radius: 23px;
@@ -97,6 +98,9 @@
         &:hover, &:active{
             background-color: white;
             color:#2ecc71;
+        }
+        &:active{
+            transform: translateY(4px);
         }
         &:focus{
             border: 2px solid black;
