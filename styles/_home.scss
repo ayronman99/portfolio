@@ -37,22 +37,24 @@
         height:35px;
         background-color: rgb(110, 76, 231);
         border-radius: 5px;
-        &::after{
-            content: '';
-            position: relative;
-            width: 0.8rem;
-            height: 0.8rem;
-            border-right: .1em solid #fff;
-            border-bottom: .1em solid #fff;
-            transition: transform 0.5s ease-in-out;
-            transform: rotate(-45deg);
-            display: inline-block;
-            }
-            &:hover::after, &:focus::after {
-                transform: rotate(45deg);
-                margin-left: 3px;
-                transition: transform 0.45s ease-in-out;
-            }
+
+        // Please move to media query for desktop
+        // &::after{
+        //     content: '';
+        //     position: relative;
+        //     width: 0.8rem;
+        //     height: 0.8rem;
+        //     border-right: .1em solid #fff;
+        //     border-bottom: .1em solid #fff;
+        //     transition: transform 0.5s ease-in-out;
+        //     transform: rotate(-45deg);
+        //     display: inline-block;
+        //     }
+        //     &:hover::after, &:focus::after {
+        //         transform: rotate(45deg);
+        //         margin-left: 3px;
+        //         transition: transform 0.45s ease-in-out;
+        //     }
     }
 }  
 
