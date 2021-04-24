@@ -1,8 +1,5 @@
 @import './fonts';
-@import './home';
-@import './about';
-@import './projects';
-@import './contacts';
+
 
 * {
   margin: 0;
@@ -107,13 +104,17 @@
       }
 
 
+@import './home';
+@import './about';
+@import './projects';
+@import './contacts';
+      
  /*
     Footer from here on
 
 */
 
 .contact-links{
-    border-radius: 5px;
     width: 100%;
     background-color: #34495e;
 }
@@ -168,9 +169,31 @@
 */
 
 
-@media (max-width: 414px) and (min-height: 698px){
+@media (max-width: 414px){
+    .project-holder{
+        grid-template-columns: repeat(auto-fit, 170px);
+        grid-template-rows: auto;
+        gap: 20px;
+        padding: 20px;
+    }
     .contact-start{
         padding-top: 40px;
         height: 85vh;
+    }
+}
+
+@media (min-width: 619px) and (max-height: 3173px){
+    /* 
+        Home query for desktop
+    */
+
+    .home{
+        display:flex;
+        flex-direction: row;
+    }
+    .goto-about{
+        position:absolute;
+        top: auto;
+        bottom: 20px;
     }
 }
