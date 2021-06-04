@@ -102,8 +102,9 @@
         &:active{
             transform: translateY(4px);
         }
+
         &:focus{
-            border: 2px solid black;
+            border: 1.5px solid rgb(157, 59, 59);
         }
     }
 

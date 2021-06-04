@@ -1,4 +1,5 @@
 .projects{
+    position:relative;
     border-radius: 17px;
     height:100vh;
     width: 100%;
@@ -16,6 +17,9 @@
     margin-bottom: 10px;
 }
 
+// .project-container{
+//     height: 500px;
+// }
 .project-holder{
     display:grid;
     height: 100%;
