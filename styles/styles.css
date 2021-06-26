@@ -315,8 +315,8 @@
 .offers img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 50%;
-  height: 50%;
+  width: 45%;
+  height: 45%;
 }
 
 .offers strong {
