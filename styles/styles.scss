@@ -304,6 +304,22 @@
       .csass{
         grid-area: csass;
       }
+/* Services Sectio */
+      .offer-container{
+        margin-top: 10px;
+        display:flex;
+        justify-content: space-around;
+      }
+
+      .offers{
+        font-size: .85rem;
+        margin: 0 5px 0 5px;
+        width: 33.3%;
+        p{
+            font-size: .9rem;
+        }
+      }
+      
 
 /* 
         Project query (min-W-619 and max-H-3173.6)

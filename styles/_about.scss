@@ -56,22 +56,7 @@
       /*    
        Services 
        container 
-       below      
-       
-       .offer-container{
-        margin-top: 10px;
-        display:flex;
-        justify-content: space-around;
-      }
-
-      .offers{
-        font-size: .75rem;
-        margin: 0 5px 0 5px;
-        width: 33.3%;
-        p{
-          font-weight:700;
-        }
-      }
+       below   
       
       */
       .services{
@@ -96,8 +81,9 @@
         padding: -10px;
         width: 50%;
         p{
+          font-family: 'Benne', serif;
           word-wrap: break-word;
-          font-weight:500;
+          font-family: 500;
         }
         img{
           object-fit: cover;

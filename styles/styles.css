@@ -10,6 +10,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Ballet&family=Oi&display=swap);
 /* font-family: 'Metrophobic', sans-serif; */
 @import url(https://fonts.googleapis.com/css2?family=Metrophobic&display=swap);
+/* font-family: 'Benne', serif; */
+@import url("https://fonts.googleapis.com/css2?family=Benne&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -270,22 +272,7 @@
 /*    
        Services 
        container 
-       below      
-       
-       .offer-container{
-        margin-top: 10px;
-        display:flex;
-        justify-content: space-around;
-      }
-
-      .offers{
-        font-size: .75rem;
-        margin: 0 5px 0 5px;
-        width: 33.3%;
-        p{
-          font-weight:700;
-        }
-      }
+       below   
       
       */
 .services {
@@ -320,8 +307,9 @@
 }
 
 .offers p {
+  font-family: 'Benne', serif;
   word-wrap: break-word;
-  font-weight: 500;
+  font-family: 500;
 }
 
 .offers img {
@@ -741,6 +729,23 @@
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: csass;
+  }
+  /* Services Sectio */
+  .offer-container {
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .offers {
+    font-size: .85rem;
+    margin: 0 5px 0 5px;
+    width: 33.3%;
+  }
+  .offers p {
+    font-size: .9rem;
   }
   /* 
         Project query (min-W-619 and max-H-3173.6)
