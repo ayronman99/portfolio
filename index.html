@@ -23,17 +23,18 @@
 <body>
    <div class='main-container'>
        
-       <nav class='navibar'>
+       <nav class='navibar nobar' id='navibar'>
         <h1 class='brand-logo'>Lee</h1>
         <input type="checkbox" id="chk">
         <label for="chk" class="burger-btn">
             <i class="fa fa-bars"></i>
           </label>
                 <ul class='nav-menu'>
-                    <a href='#home'>Home</a>
-                    <a href='#about'>About</a>
-                    <a href='#projects'>Projects</a>
-                    <a href='#contact'>Contact</a>
+                    <a class='homebut' href='#home'>Home</a>
+                    <a class='aboutbut' href='#about'>About</a>
+                    <a class='servbut' href='#services'>What I Do</a>
+                    <a class='projbut' href='#projects'>Projects</a>
+                    <a class='contactbut' href='#contact'>Contact</a>
             <label for="chk" class="close-btn">
                 <i class="fa fa-times"></i>
              </label>
@@ -42,13 +43,13 @@
              <!-- Home section down here -->
         <div class='home' id='home'>
             <div class='intro'>
+                
                 <h1>Hi! My name is Lee.</h1>
                 <p>Welcome to my portfolio!</p>
                 <br />
                 <p>Whether you're looking to attract prospect and potential clients or just show the world your masterpiece. I can help you in creating your dream website.</p>
             </div>
-           
-
+                
             <div class='coderhandler'>
                 <img src='./images/skills/buildweb.svg'
                   alt='build websites'
@@ -56,7 +57,6 @@
               </div>
 
               <div class='goto-about'>
-    
                     <div class='goto-handler'>  
                         <a  href='#about'> Know more </a>
                      </div>
@@ -113,7 +113,7 @@
         </div>
 
     <!-- Services down here -->
-        <div class='services'>
+        <div class='services' id='services'>
             <h2> What I do </h2>
             <!--desktop query @media (min-width: 619px) and (max-height: 3173px)-->
 
@@ -134,7 +134,7 @@
             <div class='offers'>
                 <strong>Optimize</strong>
                      <img src="./images/icons/speed.png" alt="Optimize" /> 
-                     <p>Ever heard of less is more? Now you will, you don't need all that intricate coding that will make your website slow, instead we use less to do more.</p>  
+                     <p>Ever heard of less is more? Now you have, you don't need all that intricate coding that will make your website slow, instead we use less to do more.</p>  
             </div>
         </div>
             

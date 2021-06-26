@@ -6,9 +6,22 @@
  */
 
 
-/*
-    *Button script
-*/
+
+/** Navigation bar JS **/
+
+const showNav = () =>{
+    
+    let navbar = document.getElementById('navibar');
+    // console.log(scrollY)
+    if(window.scrollY >= 632){
+        navbar.classList.remove('nobar')
+      } else {
+        navbar.classList.add('nobar')
+      }
+}
+
+window.addEventListener('scroll', showNav)
+/*  *Button script     */
 
 const notYet = () => {
     window.alert('Function not yet implemented.');
@@ -39,3 +52,10 @@ putin.forEach((input) => {
     input.addEventListener('focus', styleFocuser);
     input.addEventListener('blur', styleBlurrier);
 })
+
+$(document).ready(function(){
+    $('.contactbut').click(()=> {
+        $('.nav-menu').css("display", 'none')
+        })
+    })  
+    

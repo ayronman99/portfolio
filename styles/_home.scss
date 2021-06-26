@@ -8,15 +8,19 @@
     justify-content: center;
     
     .intro{
-        margin-top: 3.5rem;
+        margin-top: 15px;
         width: 100%;
         padding: 15px;
+        box-shadow: 3px 5px 23px 7px rgb(110, 76, 231);
 
         h1{
             padding-bottom: 7.5px;
-        }
+        }    
+        
+        
     }
  }
+
 
  .coderhandler{
     width: 100%;
