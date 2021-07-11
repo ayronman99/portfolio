@@ -53,9 +53,19 @@ putin.forEach((input) => {
     input.addEventListener('blur', styleBlurrier);
 })
 
-$(document).ready(function(){
-    $('.contactbut').click(()=> {
-        $('.nav-menu').css("display", 'none')
-        })
-    })  
-    
+/* nav menu */
+
+const burjir = document.querySelector('#burger');
+const navig = document.querySelector('#nav-menu');
+
+document.onclick = function(e){
+    if(e.target.id !== 'burger' && e.target.id !== 'nav-menu'){
+        burjir.classList.remove('clicked');
+        navig.classList.remove('active');
+    }
+}
+
+burjir.onclick = function(){
+    burjir.classList.toggle('clicked');
+    navig.classList.toggle('active')
+}

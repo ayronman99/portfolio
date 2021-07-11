@@ -51,13 +51,6 @@
 
 .nav-menu {
   font-family: 'Poppins', sans-serif;
-  float: right;
-  position: fixed;
-  background: #5654cf;
-  width: 100%;
-  height: 100vh;
-  right: -100%;
-  top: 0;
   text-align: center;
   padding: 60px 0;
   line-height: normal;
@@ -96,36 +89,70 @@
           transform: scaleX(1);
 }
 
-.burger-btn, .close-btn {
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  margin-top: -15px;
-  font-size: 24px;
+#burger {
+  z-index: 5;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 10px;
+  right: 20px;
+  width: 50px;
+  height: 40px;
   cursor: pointer;
-  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.close-btn {
+#burger::before {
+  content: '';
   position: absolute;
-  top: 40px;
-  right: 40px;
+  width: 30px;
+  height: 2.2px;
+  background: white;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
-.burger-btn {
+#burger::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 2.2px;
+  background: white;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#burger.clicked::before {
+  -webkit-transform: translateY(0px) rotate(45deg);
+          transform: translateY(0px) rotate(45deg);
+}
+
+#burger.clicked::after {
+  -webkit-transform: translateY(0px) rotate(-45deg);
+          transform: translateY(0px) rotate(-45deg);
+}
+
+#nav-menu {
   float: right;
+  position: fixed;
+  background: #5654cf;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  right: -100%;
 }
 
-.burger-btn i {
-  line-height: 100px;
-}
-
-#chk {
-  position: absolute;
-  visibility: hidden;
-  z-index: -1111;
-}
-
-#chk:checked ~ .nav-menu {
+#nav-menu.active {
   right: 0;
 }
 
@@ -730,7 +757,7 @@
     -ms-grid-column: 1;
     grid-area: csass;
   }
-  /* Services Sectio */
+  /* Services Section */
   .offer-container {
     margin-top: 10px;
     display: -webkit-box;
