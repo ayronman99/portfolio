@@ -12,11 +12,17 @@
 const showNav = () =>{
     
     let navbar = document.getElementById('navibar');
-    // console.log(scrollY)
+    /*console.log(scrollY) 
     if(window.scrollY >= 632){
         navbar.classList.remove('nobar')
       } else {
         navbar.classList.add('nobar')
+      }
+       */ 
+    if(window.scrollY >= 632){
+        navbar.classList.add('nobar')
+      } else {
+        navbar.classList.remove('nobar')
       }
 }
 
@@ -56,10 +62,10 @@ putin.forEach((input) => {
 /* nav menu */
 
 const burjir = document.querySelector('#burger');
-const navig = document.querySelector('#nav-menu');
+const navig = document.querySelector('#nav-holder');
 
 document.onclick = function(e){
-    if(e.target.id !== 'burger' && e.target.id !== 'nav-menu'){
+    if(e.target.id !== 'burger' && e.target.id !== 'nav-holder'){
         burjir.classList.remove('clicked');
         navig.classList.remove('active');
     }

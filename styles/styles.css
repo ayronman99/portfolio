@@ -26,19 +26,23 @@
     *nav menu styling
     *nav bar responsiveness
 */
-.nobar {
-  visibility: hidden;
-}
-
 .navibar {
   position: fixed;
-  top: 0;
+  top: -100%;
+  visibility: hidden;
   height: 55px;
   width: 100%;
   background: #5654cf;
   padding: 0 20px;
   color: #fff;
   z-index: 999;
+  -webkit-transition: 0.250s;
+  transition: 0.250s;
+}
+
+.navibar.nobar {
+  top: 0;
+  visibility: visible;
 }
 
 .brand-logo {
@@ -142,7 +146,7 @@
           transform: translateY(0px) rotate(-45deg);
 }
 
-#nav-menu {
+#nav-holder {
   float: right;
   position: fixed;
   background: #5654cf;
@@ -150,9 +154,11 @@
   width: 100%;
   height: 100vh;
   right: -100%;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
-#nav-menu.active {
+#nav-holder.active {
   right: 0;
 }
 
@@ -211,13 +217,17 @@
   width: 20px;
 }
 
-.goto-about div {
+.goto-handler {
   padding-top: 6.5px;
   padding-left: 8px;
   width: 100px;
   height: 35px;
-  background-color: #6e4ce7;
   border-radius: 5px;
+  background-size: 200%;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  background-image: -webkit-gradient(linear, right top, left top, from(#b0a6b5), color-stop(#8e32b3), to(#a86ac1));
+  background-image: linear-gradient(to left, #b0a6b5, #8e32b3, #a86ac1);
 }
 
 /* About Page Design*/
@@ -413,6 +423,19 @@
 .contact {
   max-width: 100vw;
   border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contact-start {
@@ -550,17 +573,6 @@
   padding: 15px;
 }
 
-@media screen and (max-height: 650px) {
-  button {
-    margin-top: -15px;
-    margin-bottom: 15px;
-  }
-}
-
-/*
-    Footer from here on
-
-*/
 .contact-links {
   width: 100%;
   background-color: #34495e;
@@ -618,6 +630,13 @@
   color: #fff;
 }
 
+@media screen and (max-height: 650px) {
+  button {
+    margin-top: -15px;
+    margin-bottom: 15px;
+  }
+}
+
 /*
     *
     * Media Queries Section
@@ -642,8 +661,13 @@
   /*
         Navbar styling
     */
-  .burger-btn, .close-btn {
+  #burger {
     display: none;
+  }
+  #nav-holder {
+    right: 0;
+    height: auto;
+    z-index: -1;
   }
   .nav-menu {
     float: right;
@@ -652,6 +676,8 @@
     height: 55px;
     line-height: 0;
     padding: 0;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
   }
   .nav-menu a {
     color: #fff;
@@ -690,15 +716,7 @@
     bottom: 120px;
   }
   .goto-handler:hover {
-    background-color: white;
-    border: 1px solid #6e4ce7;
-    padding-right: 3px;
-    -webkit-box-shadow: 4px 3px grey;
-            box-shadow: 4px 3px grey;
-  }
-  .goto-handler:hover a {
-    font-weight: bold;
-    color: #6e4ce7;
+    background-position: right;
   }
   /* 
         About query (min-W-619 and max-H-3173.6)
