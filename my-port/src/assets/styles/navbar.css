@@ -1,0 +1,10 @@
+.navbar {
+  background-color: #e4dcdc;
+  opacity: 0.5;
+  scroll-behavior: smooth;
+}
+
+.brand-logo {
+  opacity: 1;
+  z-index: 3;
+}/*# sourceMappingURL=navbar.css.map */
