@@ -40,7 +40,7 @@
 }
 .explore .chevrons-down span {
   position: absolute;
-  left: 175px;
+  left: auto;
   right: auto;
 }
 .explore .chevrons-down .chev-1 {
@@ -75,5 +75,15 @@
   }
   100% {
     margin-bottom: 0;
+  }
+}
+@media screen and (max-height: 609px) {
+  .center-logo {
+    height: 85px;
+  }
+
+  .explore {
+    position: absolute;
+    bottom: 25px;
   }
 }/*# sourceMappingURL=homepage.css.map */

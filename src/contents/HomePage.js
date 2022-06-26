@@ -8,7 +8,7 @@ import "../assets/styles/homepage.css";
 export default function HomePage(){
 
     return(
-        <div className="home-page vh-100 text-bg-primary">
+        <div id="home" className="home-page vh-100 text-bg-primary">
                 <div className="top-greeting d-flex align-items-center flex-column">
                     <img className="center-logo" src={unDrawProud} alt="test" />
                     <section className="intro-text  d-flex align-items-center flex-column">
@@ -16,7 +16,10 @@ export default function HomePage(){
                         Welcome to my Portfolio
                         </h2>
                         <p>
-                        I am a web developer with a background in Computer Technology. I am immensely fond technology and innovative ideas. Know more about my skills below to know how I can help!
+                        I am a web developer with a background in Computer Technology. 
+                        </p>
+                        <p>
+                        I am immensely fond technology and innovative ideas. Know more about my skills below to know how I can help! 
                         </p>
                 </section>
                 </div>

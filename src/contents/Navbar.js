@@ -1,22 +1,38 @@
-import React from "react";
-import {Nav, Navbar, Container, NavDropdown} from "react-bootstrap";
+import React, { useState } from "react";
+import {Nav, Navbar, Container, Image} from "react-bootstrap";
 import myLogo from "../assets/images/SVG/newEnm.svg";
+import BurgerLogo from "../assets/images/PNG/burger-logo.png";
 import '../assets/styles/navbar.css'
 
 export default function NavbarTop(){
+
+  const [clicked, isClicked] = useState(false);
+
+  const navClicked = () => {
+    isClicked(!clicked)
+  }
+
     return(
-        <Navbar className="navbar" fixed="top" expand="lg">
-        <Container className="d-flex flex-row">
-          <Navbar.Brand className="w-25" href="#home">
-              <img className="brand-logo img-fluid w-75" src={myLogo} alt="lee-logo"/>
-            </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar collapseOnSelect className={`${clicked && 'show-bg'}`} fixed="top" expand="lg">
+        <Container>
+          <div className={`brand-holder d-flex ${clicked ? 'justify-content-end' : 'justify-content-between'}`}> 
+
+              <Navbar.Brand className="w-25" href="#home">
+
+              {clicked ?  
+                  <img className="brand-logo-2 me-3 img-fluid w-75" src={BurgerLogo} alt="lee-logo"/> : <Image className="brand-logo w-75" src={myLogo} alt="lee-logo" />}
+    
+              </Navbar.Brand>
+            
+            <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={navClicked}/>
+          </div>
+        
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Skills</Nav.Link>
-              <Nav.Link href="#link">Works</Nav.Link>
-              <Nav.Link href="#link">Contact Me!</Nav.Link>
+              <Nav.Link href="#skills">Skills</Nav.Link>
+              <Nav.Link href="#works">Works</Nav.Link>
+              <Nav.Link href="#contacts">Contact Me!</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
