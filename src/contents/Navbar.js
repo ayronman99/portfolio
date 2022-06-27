@@ -7,13 +7,25 @@ import '../assets/styles/navbar.css'
 export default function NavbarTop(){
 
   const [clicked, isClicked] = useState(false);
+  const [navbarBg, setNavbarBG] = useState(false);
 
   const navClicked = () => {
     isClicked(!clicked)
   }
 
+  const changeBackground = () => {
+    // console.log(window.scrollY )/
+    if(window.scrollY >= 666 || window.scrollY >= 568){
+      setNavbarBG(true)
+    } else {
+      setNavbarBG(false)
+    }
+  }
+
+  window.addEventListener("scroll", changeBackground);
+
     return(
-        <Navbar collapseOnSelect className={`${clicked && 'show-bg'}`} fixed="top" expand="lg">
+        <Navbar collapseOnSelect className={`${clicked && 'show-bg'} ${navbarBg && 'active'}`} fixed="top" expand="lg">
         <Container>
           <div className={`brand-holder d-flex ${clicked ? 'justify-content-end' : 'justify-content-between'}`}> 
 
@@ -29,10 +41,10 @@ export default function NavbarTop(){
         
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#skills">Skills</Nav.Link>
-              <Nav.Link href="#works">Works</Nav.Link>
-              <Nav.Link href="#contacts">Contact Me!</Nav.Link>
+              <Nav.Link onClick={navClicked} href="#home">Home</Nav.Link>
+              <Nav.Link onClick={navClicked} href="#skills">Skills</Nav.Link>
+              <Nav.Link onClick={navClicked} href="#works">Works</Nav.Link>
+              <Nav.Link onClick={navClicked} href="#contacts">Contact Me!</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

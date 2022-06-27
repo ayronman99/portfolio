@@ -78,8 +78,11 @@
   }
 }
 @media screen and (max-height: 609px) {
-  .center-logo {
-    height: 85px;
+  .top-greeting {
+    top: 75px;
+  }
+  .top-greeting .center-logo {
+    height: 75px;
   }
 
   .explore {

@@ -1,0 +1,21 @@
+.skills {
+  color: rgb(224, 216, 216);
+  background-size: cover;
+  margin: 0;
+  border: 1px solid rgba(252, 244, 244, 0);
+  margin-bottom: 6rem;
+}
+
+.quote-container {
+  margin-top: 6rem;
+}
+
+.quote-text {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.quote-author {
+  font-weight: bold;
+  font-size: 1.25rem;
+}/*# sourceMappingURL=skills.css.map */

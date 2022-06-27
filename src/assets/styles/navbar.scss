@@ -1,12 +1,21 @@
 .navbar {
-    background-color: #e4dcdc;
-    opacity: 0.25;
-    transition: background-image .5s ease-in-out;
+    background: transparent;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar.active {
+    background-color: rgb(185, 198, 209);
+    opacity: 1;
 }
 
 .show-bg{
     background-image: url(../images/SVG/dragon-scales.svg);
     opacity: 1;
+}
+
+.navbar-toggler {
+    margin-top: .75rem;
+    height: 3rem;
 }
 
 .navbar-nav {

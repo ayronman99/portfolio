@@ -1,6 +1,10 @@
-.App {
+.main-cont {
   text-align: center;
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url('./assets/images/SVG/endless-constellation.svg');
 }
 
 .App-logo {
