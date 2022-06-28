@@ -9,7 +9,7 @@ import '../assets/styles/skills.css';
 
 export default function Skills(){
     return (
-    <div id="skills"  className="skills container-sm">
+    <div id="skills"  className="skills container">
           <div className="quote-container">
             <p className="quote-text">
                     “One language sets you in a corridor for life. 

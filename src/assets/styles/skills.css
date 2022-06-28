@@ -1,7 +1,7 @@
 .skills {
   color: rgb(224, 216, 216);
   background-size: cover;
-  margin: 0;
+  margin: auto;
   border: 1px solid rgba(252, 244, 244, 0);
   margin-bottom: 6rem;
 }

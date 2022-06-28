@@ -1,0 +1,27 @@
+.works {
+  scroll-margin-top: 5rem;
+  color: white;
+}
+.works h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.works .container .card {
+  color: black;
+  width: "12rem";
+}
+.works .chev-right-1 {
+  font-size: 2rem;
+  -webkit-animation: right 1s infinite linear;
+          animation: right 1s infinite linear;
+}
+.works .see-more p {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    color: black;
+    width: "15rem";
+  }
+}/*# sourceMappingURL=works.css.map */
