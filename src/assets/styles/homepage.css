@@ -4,51 +4,28 @@
   background-size: cover;
 }
 
-.top-greeting {
-  position: relative;
-  top: 125px;
-}
-.top-greeting .center-logo {
-  height: 99px;
-}
-.top-greeting .intro-text p {
-  word-wrap: break-word;
-  width: 80%;
+.explore {
+  margin-top: 3rem;
 }
 
-.explore {
-  width: 100%;
-  position: absolute;
-  bottom: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 1rem;
-}
-.explore h3 {
-  font-weight: bold;
-  font-size: 2.5rem;
-}
-.explore .chevrons-down {
+.chevrons-down {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  margin-top: 1rem;
-  padding: 0;
-  font-size: 1.4rem;
 }
-.explore .chevrons-down span {
+.chevrons-down a {
+  position: relative;
+}
+.chevrons-down span {
   position: absolute;
   left: auto;
   right: auto;
 }
-.explore .chevrons-down .chev-1 {
+.chevrons-down .chev-1 {
   -webkit-animation: move 1s infinite linear;
           animation: move 1s infinite linear;
   bottom: -16px;
 }
-.explore .chevrons-down .chev-2 {
+.chevrons-down .chev-2 {
   -webkit-animation: move 1s infinite linear;
           animation: move 1s infinite linear;
   bottom: -35px;
@@ -75,18 +52,5 @@
   }
   100% {
     margin-bottom: 0;
-  }
-}
-@media screen and (max-height: 609px) {
-  .top-greeting {
-    top: 75px;
-  }
-  .top-greeting .center-logo {
-    height: 75px;
-  }
-
-  .explore {
-    position: absolute;
-    bottom: 25px;
   }
 }/*# sourceMappingURL=homepage.css.map */

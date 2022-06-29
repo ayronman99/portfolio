@@ -7,54 +7,85 @@
 }
 
 .top-greeting { 
-    position: relative;
-    top: 125px;
-    .center-logo {
-        height: 99px;
-    }
-    .intro-text {
+        // margin-bottom: 1rem;
+        // border: 2px solid red;
+     }
+
+// .top-greeting { 
+//     position: relative;
+//     top: 125px;
+//     .center-logo {
+//         height: 99px;
+//     }
+//     .intro-text {
     
-        p {
-            word-wrap: break-word;
-            width: 80%;
-        }
-    }
-}
+//         p {
+//             word-wrap: break-word;
+//             width: 80%;
+//         }
+//     }
+// }
 
 
-.explore {
-    width: 100%;
-    position: absolute;
-    bottom: 100px;
+// .explore {
+//     width: 100%;
+//     position: absolute;
+//     bottom: 100px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//     margin-bottom: 1rem;
+//     h3{
+//         font-weight: bold;
+//         font-size: 2.5rem;
+//     }
+//     .chevrons-down {
+//         display: flex;
+//         flex-direction: column;
+//         margin: 0;
+//         margin-top: 1rem;
+//         padding: 0;
+//         font-size: 1.4rem;
+//         span{ 
+//             position: absolute;
+//             left: auto;
+//             right: auto;
+//         }
+//         .chev-1 {
+//             animation: move 1s infinite linear;
+//             bottom: -16px;
+//         }
+//         .chev-2 {
+//             animation: move 1s infinite linear;
+//             bottom: -35px;
+//         }
+//     }
+// }
+
+.explore {margin-top: 3rem;}
+
+.chevrons-down {
+    // border: 2px solid red;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    margin-bottom: 1rem;
-    h3{
-        font-weight: bold;
-        font-size: 2.5rem;
+    // justify-content: center;
+    // align-items: center;
+    a{
+        position: relative;
     }
-    .chevrons-down {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        margin-top: 1rem;
-        padding: 0;
-        font-size: 1.4rem;
-        span{ 
-            position: absolute;
-            left: auto;
-            right: auto;
-        }
-        .chev-1 {
-            animation: move 1s infinite linear;
-            bottom: -16px;
-        }
-        .chev-2 {
-            animation: move 1s infinite linear;
-            bottom: -35px;
-        }
+    span { 
+        position: absolute;
+        left: auto;
+        right: auto;
+    }
+    .chev-1 {
+        animation: move 1s infinite linear;
+        bottom: -16px;
+    }
+    .chev-2 {
+        animation: move 1s infinite linear;
+        bottom: -35px;
     }
 }
 
@@ -64,15 +95,3 @@
     100%{margin-bottom:0;}
   }
 
-  @media screen and (max-height: 609px) {
-   .top-greeting{
-        top: 75px;
-    .center-logo {
-        height: 75px;
-    }
-   }
-    .explore {
-        position: absolute;
-        bottom: 25px;
-    }
-  }

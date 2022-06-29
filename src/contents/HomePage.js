@@ -8,7 +8,7 @@ import "../assets/styles/homepage.css";
 export default function HomePage(){
 
     return(
-        <div id="home" className="home-page vh-100 text-bg-primary">
+        <div id="home" className="home-page vh-100 text-bg-primary d-flex justify-content-center flex-column">
                 <div className="top-greeting d-flex align-items-center flex-column">
                     <img className="center-logo" src={unDrawProud} alt="test" />
                     <section className="intro-text  d-flex align-items-center flex-column">
@@ -24,7 +24,7 @@ export default function HomePage(){
                 </section>
                 </div>
 
-                <div className="explore">
+                <div className="explore w-100 mb-3">
                     <h3>Explore</h3>
                     <div className="chevrons-down"> 
                       <a href="#skills">
