@@ -9,7 +9,7 @@ import '../assets/styles/skills.css';
 
 export default function Skills(){
     return (
-    <div id="skills"  className="skills container">
+    <div id="skills"  className="skills container vh-100">
           <div className="quote-container">
             <p className="quote-text">
                     “One language sets you in a corridor for life. 
@@ -39,7 +39,7 @@ export default function Skills(){
                 <img className="img-fluid" src={CSS3} alt="css3"/>
                 </div>
                 
-                <div className="row mt-4 mx-auto">
+                <div className="row mt-3 mx-auto">
                     <div className="col-6">
                     <img className="img-fluid" src={NODEJS} alt="nodejs"/>
                     </div>
