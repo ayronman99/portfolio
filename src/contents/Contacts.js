@@ -41,7 +41,7 @@ export default function Contacts(){
                             </div>
                             <div className="form-floating mb-3">
                                     <textarea className="form-control" placeholder="Leave your message" id="floatingTextarea2" style={{height: "100px"}}></textarea>
-                                    <label htmlFor="floatingTextarea2">What's on your mind?</label>
+                                    <label htmlFor="floatingTextarea2"></label>
                             </div>
                            
                            

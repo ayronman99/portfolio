@@ -13,19 +13,19 @@ export default function HomePage(){
                     <img className="center-logo" src={unDrawProud} alt="test" />
                     <section className="intro-text  d-flex align-items-center flex-column">
                         <h2>
-                        Welcome to my Portfolio
+                        Hi, my name is Lee!
                         </h2>
                         <p>
-                        I am a web developer with a background in Computer Technology. 
+                        I am a web developer with a background in Computer Technology. I am immensely fond technology and innovative ideas. Know more about my skills below to know how I can help! 
                         </p>
-                        <p>
-                        I am immensely fond technology and innovative ideas. Know more about my skills below to know how I can help! 
-                        </p>
+                        {/* <p>
+                        
+                        </p> */}
                 </section>
                 </div>
 
                 <div className="explore w-100 mb-3">
-                    <h3>Explore</h3>
+                    <h3>Explore more</h3>
                     <div className="chevrons-down"> 
                       <a href="#skills">
                          <span className="chev-1">

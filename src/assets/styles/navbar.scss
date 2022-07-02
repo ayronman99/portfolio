@@ -1,15 +1,30 @@
 .navbar {
     background: transparent;
     transition: all 0.5s ease-in-out;
+    // border: 2px solid red;
+    padding: 0;
+
+    .container{
+        max-width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.navbar-collapse {
+    // border: 2px solid magenta;
+    .navbar-nav{
+        font-size: 1.5rem;
+        // border: 2px solid rgb(121, 83, 121);
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 2rem;
+    }
 }
 
 .navbar.active {
-    background-color: rgb(185, 198, 209);
-    opacity: 1;
-}
-
-.show-bg{
-    background-image: url(../images/SVG/dragon-scales.svg); /* background by SVGBackgrounds.com */
+    background-color: rgb(102, 106, 109);
     opacity: 1;
 }
 
@@ -23,10 +38,8 @@
     width: 100%;
 }
 
-.brand-holder {
-    // border: 2px solid red;
-
-    .brand-logo-2 {
-        margin-left: -3rem;
-    }
+.brand-logo{
+    // border: 2px solid green;
+    height: 5rem;
+    width: 5rem;
 }

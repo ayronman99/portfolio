@@ -3,6 +3,7 @@
   background-size: cover;
   margin: auto;
   border: 1px solid rgba(252, 244, 244, 0);
+  scroll-margin-top: 5rem;
 }
 
 .quote-container {
@@ -14,7 +15,20 @@
   margin-bottom: 0;
 }
 
+.about-sales {
+  margin: auto;
+  width: 90%;
+}
+
 .quote-author {
   font-weight: bold;
   font-size: 1.25rem;
+}
+
+.skills-logo img {
+  height: auto;
+  width: 8rem;
+}
+.skills-logo .reactlogo {
+  width: 10rem;
 }/*# sourceMappingURL=skills.css.map */

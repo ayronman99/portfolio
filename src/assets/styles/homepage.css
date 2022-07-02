@@ -4,8 +4,21 @@
   background-size: cover;
 }
 
+.center-logo {
+  width: 200px;
+}
+
+.intro-text p {
+  width: 80%;
+}
+
 .explore {
   margin-top: 3rem;
+  font-size: 2rem;
+}
+.explore h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .chevrons-down {
@@ -52,5 +65,15 @@
   }
   100% {
     margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .center-logo {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .intro-text p {
+    width: 50%;
   }
 }/*# sourceMappingURL=homepage.css.map */

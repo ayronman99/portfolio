@@ -25,26 +25,21 @@ export default function NavbarTop(){
   window.addEventListener("scroll", changeBackground);
 
     return(
-        <Navbar collapseOnSelect className={`${clicked && 'show-bg'} ${navbarBg && 'active'}`} fixed="top" expand="lg">
+        <Navbar collapseOnSelect className={`${clicked && 'show-bg'} ${navbarBg && 'active'}`} fixed="top" expand="sm">
         <Container>
-          <div className={`brand-holder d-flex ${clicked ? 'justify-content-end' : 'justify-content-between'}`}> 
 
-              <Navbar.Brand className="w-25" href="#home">
-
-              {clicked ?  
-                  <img className="brand-logo-2 me-3 img-fluid w-75" src={BurgerLogo} alt="lee-logo"/> : <Image className="brand-logo w-75" src={myLogo} alt="lee-logo" />}
-    
+              <Navbar.Brand className="w-25 h-25"  href="#home">
+                   <Image className="brand-logo img-fluid w-75" src={myLogo} alt="lee-logo" />
               </Navbar.Brand>
             
-            <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={navClicked}/>
-          </div>
+            <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link onClick={navClicked} href="#home">Home</Nav.Link>
-              <Nav.Link onClick={navClicked} href="#skills">Skills</Nav.Link>
-              <Nav.Link onClick={navClicked} href="#works">Works</Nav.Link>
-              <Nav.Link onClick={navClicked} href="#contacts">Contact Me!</Nav.Link>
+            <Nav>
+              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link href="#skills">Skills</Nav.Link>
+              <Nav.Link href="#works">Works</Nav.Link>
+              <Nav.Link href="#contacts">Contact Me!</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

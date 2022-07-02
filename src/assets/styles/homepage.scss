@@ -6,15 +6,29 @@
     background-size: cover;
 }
 
+.center-logo {
+    width: 200px;
+}
 
-.explore {margin-top: 3rem;}
+.intro-text{
+    p{
+        width: 80%;
+    }
+}
+
+.explore {
+    margin-top: 3rem;
+    font-size: 2rem;
+    h3{
+     font-size: 2rem; 
+     margin-bottom: 1.5rem;  
+    }
+}
 
 .chevrons-down {
     // border: 2px solid red;
     display: flex;
     flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
     a{
         position: relative;
     }
@@ -40,6 +54,20 @@
   }
 
 
+
+@media screen and (min-width: 768px){
+    .center-logo {
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .intro-text{
+        p{
+            width: 50%;
+        }
+    }
+}
 
   // .top-greeting { 
     //     position: relative;

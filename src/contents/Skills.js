@@ -27,7 +27,7 @@ export default function Skills(){
                 </p>
           </div>
 
-        <div className="container">
+        <div className="skills-logo container mt-5">
             <div className="row">
                 <div className="col">
                 <img className="img-fluid" src={HTML5} alt="html5"/>
@@ -44,7 +44,7 @@ export default function Skills(){
                     <img className="img-fluid" src={NODEJS} alt="nodejs"/>
                     </div>
                     <div className="col-6">
-                    <img className="img-fluid" src={REACTLOGO} alt="reactlogo"/>
+                    <img className="reactlogo img-fluid" src={REACTLOGO} alt="reactlogo"/>
                     </div>
                 </div>
             </div>

@@ -5,6 +5,7 @@
     background-size: cover;
     margin: auto;
     border: 1px solid rgb(252, 244, 244, 0);
+    scroll-margin-top: 5rem;
     // border: 3px solid red;
 }
 
@@ -16,10 +17,24 @@
     font-weight: bold;
     margin-bottom: 0;
 }
+.about-sales{
+    margin: auto;
+    width: 90%;
+}
 
 .quote-author {
     font-weight: bold;
     font-size: 1.25rem;
+}
+
+.skills-logo{
+    img{
+        height: auto;
+        width: 8rem;
+    }
+    .reactlogo{
+        width: 10rem;
+    }
 }
 
 // .col, .col-6 {
