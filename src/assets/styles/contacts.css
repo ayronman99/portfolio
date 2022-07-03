@@ -6,10 +6,76 @@
   font-size: 2.5rem;
 }
 
-.form-floating {
-  color: #141414;
-}
-
 #emailHelp {
   color: white;
+}
+
+.img-mario {
+  border: 2px solid red;
+  border-radius: 50%;
+  width: 5rem;
+  height: auto;
+}
+
+.social-holder {
+  font-size: 3rem;
+  margin: auto;
+}
+.social-holder .col {
+  margin: auto;
+  color: #141414;
+  width: 5em;
+}
+.social-holder svg {
+  transition: all 0.5s ease-in-out;
+  border-radius: 5px;
+}
+.social-holder .linkedIn {
+  color: #141414;
+}
+.social-holder .linkedIn svg {
+  background-color: antiquewhite;
+  padding: 2.5px;
+}
+.social-holder .linkedIn:hover {
+  color: #0a66c2;
+}
+.social-holder .linkedIn:hover svg {
+  background-color: transparent;
+}
+.social-holder .gitHub {
+  color: #141414;
+}
+.social-holder .gitHub svg {
+  background-color: antiquewhite;
+}
+.social-holder .gitHub:hover {
+  color: #cae1f4;
+}
+.social-holder .gitHub:hover svg {
+  background-color: transparent;
+}
+.social-holder .twitter {
+  color: #141414;
+}
+.social-holder .twitter svg {
+  background-color: antiquewhite;
+}
+.social-holder .twitter:hover {
+  color: #1DA1F2;
+}
+.social-holder .twitter:hover svg {
+  background-color: transparent;
+}
+.social-holder .facebook {
+  color: #141414;
+}
+.social-holder .facebook svg {
+  background-color: antiquewhite;
+}
+.social-holder .facebook:hover {
+  color: #4267B2;
+}
+.social-holder .facebook:hover svg {
+  background-color: transparent;
 }/*# sourceMappingURL=contacts.css.map */

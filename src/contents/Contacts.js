@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserCircle, faMobilePhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faGithub, faLinkedin, faTwitter} from '@fortawesome/free-brands-svg-icons';
 import '../assets/styles/contacts.css';
 
 export default function Contacts(){
@@ -13,9 +14,10 @@ export default function Contacts(){
     return(
         <div>
             <div id="contacts" className="contacts-section mt-5">
-                <div className="intro-contacts">
-                    <h3> Let's work together! </h3>
-                    <FontAwesomeIcon icon={faUserCircle} size="9x"/>
+                  <h3> Let's work together! </h3>
+                  <div className="intro-contacts mb-3">
+                    
+                  <img className="img-mario" src="https://play-lh.googleusercontent.com/5LIMaa7WTNy34bzdFhBETa2MRj7mFJZWb8gCn_uyxQkUvFx_uOFCeQjcK16c6WpBA3E" alt="it's me Mario!"/>
                 </div>
                 <div className="details-contacts">
                     <p>
@@ -28,27 +30,31 @@ export default function Contacts(){
                     </p>
                     
                 </div>
-                <div className="form-contacts w-75 m-auto">
-                        <form onSubmit={betaClick}>
-                            <div className="mb-3">
-                                <label htmlFor="inputEmail" className="form-label">Email address</label>
-                                <input type="email" className="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter your e-mail here."/>
-                                <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="forName" className="form-label">Name</label>
-                                <input type="text" className="form-control" id="forName" placeholder="Enter your name here." />
-                            </div>
-                            <div className="form-floating mb-3">
-                                    <textarea className="form-control" placeholder="Leave your message" id="floatingTextarea2" style={{height: "100px"}}></textarea>
-                                    <label htmlFor="floatingTextarea2"></label>
-                            </div>
-                           
-                           
-                            <button type="submit" className="btn btn-primary mb-3">Submit</button>
-                            
-                         </form>
+               <div className="social-media container">
+                <div className="social-holder row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                     <div className="col">
+                            <a className="linkedIn" href="https://www.linkedin.com/in/lee-lacay-5564b51a4/" target="_blank">
+                             <FontAwesomeIcon icon={faLinkedin} />
+                            </a>
+                        </div>
+                        <div className="col">
+                            <a className="gitHub" href="https://www.github.com/" target="_blank">
+                                <FontAwesomeIcon icon={faGithub} />
+                                </a>
+                        </div>
+                        <div className="col">
+                        <a className="twitter" href="https://www.twitter.com/" target="_blank">
+                             <FontAwesomeIcon icon={faTwitter} />
+                            </a>
+                        </div>
+                        <div className="col">
+                            <a className="facebook" href="https://www.facebook.com/" target="_blank">
+                             <FontAwesomeIcon icon={faFacebook} />
+                            </a> 
+                        </div>
                 </div>
+                    
+               </div>
 
           </div>
         </div>
