@@ -2,7 +2,7 @@
     background: transparent;
     transition: all 0.5s ease-in-out;
     // border: 2px solid red;
-    padding: 0;
+    color: white;
 
     .container{
         max-width: 100%;
@@ -11,20 +11,21 @@
         justify-content: space-between;
     }
 }
+#basic-navbar-nav{
+    color: white;
+}
 
-.navbar-collapse {
-    // border: 2px solid magenta;
-    .navbar-nav{
-        font-size: 1.5rem;
-        // border: 2px solid rgb(121, 83, 121);
-        display: flex;
-        justify-content: flex-end;
-        padding-right: 2rem;
-    }
+.navbar-toggler-icon {
+    background-image: url("../images/SVG/burger.svg") !important;
+}
+
+.show-bg{
+    background-color: rgb(171, 173, 175);
+    opacity: 1;
 }
 
 .navbar.active {
-    background-color: rgb(102, 106, 109);
+    background-color: rgb(171, 173, 175);
     opacity: 1;
 }
 
@@ -33,13 +34,35 @@
     height: 3rem;
 }
 
-.navbar-nav {
-    text-align: center;
-    width: 100%;
+.navbar-nav{
+    font-size: 1.25rem;
+    font-weight: bold;
 }
 
 .brand-logo{
     // border: 2px solid green;
     height: 5rem;
     width: 5rem;
+}
+
+
+
+@media screen and (min-width: 562px) {
+    .navbar-collapse {
+        display: flex;
+        justify-content: flex-end;
+        color:rgb(171, 173, 175);
+        .navbar-nav{
+            font-size: 1.5rem;
+            // border: 2px solid rgb(167, 28, 167);
+            padding-right: 2rem;
+            a{
+                color:rgb(171, 173, 175);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+   
 }

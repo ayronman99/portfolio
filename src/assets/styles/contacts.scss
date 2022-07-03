@@ -27,70 +27,98 @@
         color: #141414;
         width: 5em;
     }
-    svg{
-        transition: all .5s ease-in-out;
-        
-        border-radius: 5px;
+    a{
+        svg{
+            transition: all .5s ease-in-out;
+            background-color: rgba(255, 255, 255, 0.849);
+            border-radius: 5px;
+        }
     }
-
     
     .linkedIn {
-        color: #141414;
-   
-        svg{
-            background-color: antiquewhite;
+        color: #0a66c2; 
+        svg {
             padding: 2.5px;
         }
-        &:hover {
-            color: #0a66c2;
-            svg{
-                background-color: transparent;
-            }
-        }  
     }
     
     .gitHub {
-        color: #141414;
-        svg{
-            background-color: antiquewhite;
+        color: #cae1f4;   
+        svg {
+            background-color: rgb(114, 111, 108);
+            padding: 2.5px;
         }
-        &:hover {
-            color: #cae1f4;
-            svg{
-                background-color: transparent;
-            }
-        }    
     }
     
     .twitter {
-        color: #141414;
-        svg{
-            background-color: antiquewhite;
-        }
-        &:hover {
-            color: #1DA1F2;
-            svg{
-                background-color: transparent;
-            }
-        }
+        color: #1DA1F2;
     }
     
     .facebook {
-        color: #141414;
-        svg{
-            background-color: antiquewhite;
-        }
-        &:hover {
-            color: #4267B2;
-            svg{
-                background-color: transparent;
-            }
-        }  
-        
+        color: #4267B2;
     }
+    
+    
 }
 
 
 
 
-
+@media screen and (min-width: 768px){
+    .social-holder {
+        .linkedIn {
+            color: #141414;
+            svg{
+                background-color: antiquewhite;
+                padding: 2.5px;
+            }
+            &:hover {
+                color: #0a66c2;
+                svg{
+                    background-color: transparent;
+                }
+            }  
+        }
+        
+        .gitHub {
+            color: #141414;
+            svg{
+                background-color: antiquewhite;
+            }
+            &:hover {
+                color: #cae1f4;
+                svg{
+                    background-color: transparent;
+                }
+            }    
+        }
+        
+        .twitter {
+            color: #141414;
+            svg{
+                background-color: antiquewhite;
+            }
+            &:hover {
+                color: #1DA1F2;
+                svg{
+                    background-color: transparent;
+                }
+            }
+        }
+        
+        .facebook {
+            color: #141414;
+            svg{
+                background-color: antiquewhite;
+            }
+            &:hover {
+                color: #4267B2;
+                svg{
+                    background-color: transparent;
+                }
+            }  
+            
+        }
+    }
+    
+}

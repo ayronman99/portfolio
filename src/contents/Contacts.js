@@ -31,7 +31,7 @@ export default function Contacts(){
                     
                 </div>
                <div className="social-media container">
-                <div className="social-holder row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                <div className="social-holder row row-cols-sm-2 row-cols-md-4">
                      <div className="col">
                             <a className="linkedIn" href="https://www.linkedin.com/in/lee-lacay-5564b51a4/" target="_blank">
                              <FontAwesomeIcon icon={faLinkedin} />

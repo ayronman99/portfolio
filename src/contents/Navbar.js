@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {Nav, Navbar, Container, Image} from "react-bootstrap";
-import myLogo from "../assets/images/SVG/newEnm.svg";
+import myLogo from "../assets/images/PNG/newEnm.png";
 import BurgerLogo from "../assets/images/PNG/burger-logo.png";
 import '../assets/styles/navbar.css'
 
@@ -14,8 +14,8 @@ export default function NavbarTop(){
   }
 
   const changeBackground = () => {
-    // console.log(window.scrollY )/
-    if(window.scrollY >= 666 || window.scrollY >= 568){
+    // console.log(window.scrollY )
+    if(window.scrollY >= 150){
       setNavbarBG(true)
     } else {
       setNavbarBG(false)
@@ -32,9 +32,9 @@ export default function NavbarTop(){
                    <Image className="brand-logo img-fluid w-75" src={myLogo} alt="lee-logo" />
               </Navbar.Brand>
             
-            <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={navClicked}/>
         
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse id="basic-navbar-nav" >
             <Nav>
               <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#skills">Skills</Nav.Link>
