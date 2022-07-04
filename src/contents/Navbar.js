@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {Nav, Navbar, Container, Image} from "react-bootstrap";
 import myLogo from "../assets/images/PNG/newEnm.png";
-import '../assets/styles/navbar.css'
+import '../assets/styles/navbar.css';
 
 export default function NavbarTop(){
 
@@ -22,9 +22,31 @@ export default function NavbarTop(){
   }
 
   window.addEventListener("scroll", changeBackground);
-
+  
     return(
-        <Navbar collapseOnSelect className={`${clicked && 'show-bg'} ${navbarBg && 'active'}`} fixed="top" expand="sm">
+        <nav className={`navbar fixed-top navbar-expand-sm bg-primary ${navbarBg && 'show-bg'}`}>
+          <div className="container-fluid">
+            <a className="navbar-brand" href="#">LeeLacay</a>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className={`collapse navbar-collapse ${clicked && ""}`} id="navbarNavAltMarkup">
+              <div className="navbar-nav">
+                <a className="nav-link" href="#home" onClick={navClicked}>Home</a>
+                <a className="nav-link" href="#skills" onClick={navClicked}>Skills</a>
+                <a className="nav-link" href="#works" onClick={navClicked}>Works</a>
+                <a className="nav-link" href="#contacts" onClick={navClicked}>Contact Me!</a>
+              </div>
+            </div>
+          </div>
+      </nav>
+    )
+}
+
+
+
+/*
+ <Navbar collapseOnSelect className={`${clicked && 'show-bg'} ${navbarBg && 'active'}`} fixed="top" expand="sm">
         <Container>
 
               <Navbar.Brand className="w-25 h-25"  href="#home">
@@ -43,17 +65,5 @@ export default function NavbarTop(){
           </Navbar.Collapse>
         </Container>
   </Navbar>
-    )
-}
 
-
-
-/*
-<NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-              </NavDropdown>
 */

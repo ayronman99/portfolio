@@ -13,17 +13,13 @@ export default function Contacts(){
     }
     return(
         <div>
-            <div id="contacts" className="contacts-section mt-5">
+            <div id="contacts" className="contacts-section mt-3 vh-100">
                   <h3> Let's work together! </h3>
                   <div className="intro-contacts mb-3">
                     
                   <img className="img-mario" src="https://play-lh.googleusercontent.com/5LIMaa7WTNy34bzdFhBETa2MRj7mFJZWb8gCn_uyxQkUvFx_uOFCeQjcK16c6WpBA3E" alt="it's me Mario!"/>
                 </div>
                 <div className="details-contacts">
-                    <p>
-                        <FontAwesomeIcon icon={faMobilePhone} />
-                        <span> 	&#40;+63&#41;test-number</span>
-                    </p>
                     <p>
                         <FontAwesomeIcon icon={faEnvelope} />
                         <span> testmail@gmail.com</span>

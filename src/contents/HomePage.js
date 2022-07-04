@@ -11,33 +11,29 @@ export default function HomePage(){
     return(
         <div id="home" className="home-page vh-100 text-bg-primary d-flex justify-content-center flex-column">
                 <div className="top-greeting d-flex align-items-center flex-column">
-                <motion.div
-                    initial={{scale: 0}}
-                    animate={{scale: 1}}
-                    transition={{delay: 0.5}}
-                >
-                    <img className="center-logo" src={unDrawProud} alt="test" />
-                  </motion.div>
+            
+                    <motion.img className="center-logo" src={unDrawProud} alt="test" 
+                        initial={{scale: 0}}
+                        animate={{scale: 1}}
+                        transition={{delay: 0.5}}
+                    />
                   
                     <section className="intro-text  d-flex align-items-center flex-column">
-                            <motion.div
-                                initial={{x: "-100vw"}}
-                                animate={{x: 0}}
-                                transition={{delay: 0.5}}
-                            >
-                                <h2>
+                                <motion.h2
+                                    initial={{x: "-100vw"}}
+                                    animate={{x: 0}}
+                                    transition={{delay: 0.5}}
+                                >
                                     Hi, my name is Lee!
-                                </h2>
-                            </motion.div>
-                            <motion.div
-                                initial={{x: "100vw"}}
-                                animate={{x: 0}}
-                                transition={{delay: 0.5}}
-                            >
-                                <p>
+                                </motion.h2>
+                            
+                            <motion.p
+                                 initial={{x: "100vw"}}
+                                 animate={{x: 0}}
+                                 transition={{delay: 0.5}}
+                                >
                                     I am a web developer with a background in Computer Technology. I am immensely fond technology and innovative ideas. Know more about my skills below to know how I can help! 
-                                </p>
-                            </motion.div>
+                                </motion.p>
                 </section>
                 </div>
 
