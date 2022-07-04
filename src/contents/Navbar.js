@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {Nav, Navbar, Container, Image} from "react-bootstrap";
 import myLogo from "../assets/images/PNG/newEnm.png";
-import BurgerLogo from "../assets/images/PNG/burger-logo.png";
 import '../assets/styles/navbar.css'
 
 export default function NavbarTop(){
