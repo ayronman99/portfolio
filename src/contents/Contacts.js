@@ -20,7 +20,7 @@ export default function Contacts(){
                   <img className="img-mario" src="https://play-lh.googleusercontent.com/5LIMaa7WTNy34bzdFhBETa2MRj7mFJZWb8gCn_uyxQkUvFx_uOFCeQjcK16c6WpBA3E" alt="it's me Mario!"/>
                 </div>
                 <div className="details-contacts">
-                    <p>
+                    <p>y
                         <FontAwesomeIcon icon={faEnvelope} />
                         <span> testmail@gmail.com</span>
                     </p>
