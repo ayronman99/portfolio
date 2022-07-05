@@ -1,13 +1,20 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faChevronCircleRight } from '@fortawesome/free-solid-svg-icons'
+import { faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
+import { useInView } from "react-intersection-observer";
 import '../assets/styles/works.css';
 
 
 
 export default function Works() {
+
+    const {ref, inView} = useInView();
+
+    // useEffect(() => {
+    //     console.log("scroll is: ", inView);
+    // })
     return (
-        <div id="works" className="works">
+        <div ref={ref} id="works" className="works">
             <h2>My Works:</h2>
             
             <div className="container">
