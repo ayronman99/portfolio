@@ -22,10 +22,17 @@
   font-size: 1.25rem;
 }
 
+.tech-skills {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 .skills-logo img {
+  padding: 0;
   height: auto;
   width: 8rem;
 }
 .skills-logo .reactlogo {
+  height: 5rem;
   width: 10rem;
 }/*# sourceMappingURL=skills.css.map */

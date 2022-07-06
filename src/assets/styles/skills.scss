@@ -23,12 +23,20 @@
     font-size: 1.25rem;
 }
 
+.tech-skills{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 .skills-logo{
     img{
+        padding: 0;
         height: auto;
         width: 8rem;
     }
     .reactlogo{
+        height: 5rem;
         width: 10rem;
+        // border: 2px solid red;
     }
 }
