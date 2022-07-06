@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.29b4cad8.css",
-    "main.js": "/portfolio/static/js/main.eaf24701.js",
+    "main.css": "/portfolio/static/css/main.36c84445.css",
+    "main.js": "/portfolio/static/js/main.c697dffb.js",
     "static/js/787.68dbee1e.chunk.js": "/portfolio/static/js/787.68dbee1e.chunk.js",
     "static/media/pixabay.svg": "/portfolio/static/media/pixabay.aebe2b0ec76a57594680.svg",
     "static/media/js-logo.png": "/portfolio/static/media/js-logo.489572f92f0d9e486794.png",
@@ -11,14 +11,17 @@
     "static/media/reactjs.png": "/portfolio/static/media/reactjs.35ed5c0d1351a124a4f5.png",
     "static/media/undrawproud.svg": "/portfolio/static/media/undrawproud.af468bde10914d55a3913ea570106bf0.svg",
     "static/media/html5.png": "/portfolio/static/media/html5.81fc5a718d0e5e473576.png",
+    "static/media/sass-logo.png": "/portfolio/static/media/sass-logo.95acddf06be5308d9a94.png",
+    "static/media/mongodb-logo.png": "/portfolio/static/media/mongodb-logo.940824112db2f1788f28.png",
+    "static/media/bootstrap-logo.svg": "/portfolio/static/media/bootstrap-logo.b91717f3b8ef81a7bf2e8b03a9579108.svg",
     "index.html": "/portfolio/index.html",
     "static/media/endless-constellation.svg": "/portfolio/static/media/endless-constellation.718c634334d28658e1d1.svg",
-    "main.29b4cad8.css.map": "/portfolio/static/css/main.29b4cad8.css.map",
-    "main.eaf24701.js.map": "/portfolio/static/js/main.eaf24701.js.map",
+    "main.36c84445.css.map": "/portfolio/static/css/main.36c84445.css.map",
+    "main.c697dffb.js.map": "/portfolio/static/js/main.c697dffb.js.map",
     "787.68dbee1e.chunk.js.map": "/portfolio/static/js/787.68dbee1e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.29b4cad8.css",
-    "static/js/main.eaf24701.js"
+    "static/css/main.36c84445.css",
+    "static/js/main.c697dffb.js"
   ]
 }
