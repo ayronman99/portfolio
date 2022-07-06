@@ -3,7 +3,7 @@ import HTML5 from '../assets/images/PNG/html5.png';
 import CSS3 from '../assets/images/PNG/css3.png';
 import JSCRIPT from '../assets/images/PNG/js-logo.png';
 import NODEJS from '../assets/images/PNG/nodejs.png';
-import REACTLOGO from '../assets/images/PNG/reactjs.png';
+import REACTLOGO from '../assets/images/PNG/react-logo.png';
 import MONGODB from '../assets/images/PNG/mongodb-logo.png';
 import BOOTSTRAP from '../assets/images/SVG/bootstrap-logo.svg';
 import SASS from '../assets/images/PNG/sass-logo.png';
@@ -78,23 +78,27 @@ export default function Skills(){
              </div>
 
 
-                <div className="row">
-                <motion.div 
-                        className="col"
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1, transition: {delay: .6}}}
-                        viewport={{ once: true }}
-                        >
-                            <img className="img-fluid" src={MONGODB} alt="css3"/>
-                        </motion.div>
-                    </div>
+                <div className="row mb-2">
+                    <div className="col-4">
+                        </div>
+                    <motion.div 
+                            className="col-4"
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1, transition: {delay: .6}}}
+                            viewport={{ once: true }}
+                            >
+                                <img className="mongo img-fluid" src={MONGODB} alt="css3"/>
+                    </motion.div>
+                            <div className="col-4">
+                        </div>
+                </div>
                 
                 <div className="row">
                             <motion.div 
                             className="col-4"
                             initial={{ opacity: 0 }}
-                            whileInView={{ opacity: 1, transition: {delay: 1}}}
-                            viewport={{ once: true }}
+                            whileInView={{ opacity: 1, transition: {delay: .4}}}
+                            viewport={{ once: true, amount: 0.8  }}
                             >
                                 <img className="img-fluid" src={BOOTSTRAP} alt="css3"/>
                             </motion.div>
@@ -103,29 +107,33 @@ export default function Skills(){
                         className="col-4"
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1, transition: {delay: .8}}}
-                        viewport={{ once: true }}
+                        viewport={{ once: true, amount: 0.8  }}
                         >
-                           <img className="img-fluid" src={SASS} alt="html5"/>
+                           <img className="img-fluid" src={SASS} alt="sass"/>
                         </motion.div>
                         
                         <motion.div 
                         className="col-4"
                         initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1, transition: {delay: 1}}}
-                        viewport={{ once: true }}
+                        whileInView={{ opacity: 1, transition: {delay: .3}}}
+                        viewport={{ once: true, amount: 0.8  }}
                         >
                             <img className="img-fluid" src={CSS3} alt="css3"/>
                         </motion.div>
                 </div>
                 <div className="row justify-content-md-center">
+                    <div className="col-4">
+                    </div>
                 <motion.div 
-                        className="col"
+                        className="col-4"
                         initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1, transition: {delay: 1}}}
+                        whileInView={{ opacity: 1, transition: {delay: .75}}}
                         viewport={{ once: true }}
                         >
                             <img className="img-fluid" src={HTML5} alt="html5"/>
                         </motion.div>
+                        <div className="col-4">
+                    </div>
                 </div>
             </div>
     </div>

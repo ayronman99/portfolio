@@ -9,7 +9,7 @@ import '../assets/styles/works.css';
 export default function Works() {
    
     return (
-        <div id="works" className="works">
+        <div id="works" className="works mt-5">
             <h2>My Works:</h2>
             
             <div className="container">

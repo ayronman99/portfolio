@@ -30,13 +30,11 @@
 
 .skills-logo{
     img{
-        padding: 0;
         height: auto;
         width: 8rem;
     }
-    .reactlogo{
-        height: 5rem;
-        width: 10rem;
-        // border: 2px solid red;
+    .mongo{
+        border-radius: 2rem;
+        background-color: rgba(218, 225, 231, 0.788);
     }
 }
