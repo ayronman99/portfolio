@@ -7,14 +7,9 @@ import '../assets/styles/works.css';
 
 
 export default function Works() {
-
-    const {ref, inView} = useInView();
-
-    // useEffect(() => {
-    //     console.log("scroll is: ", inView);
-    // })
+   
     return (
-        <div ref={ref} id="works" className="works">
+        <div id="works" className="works">
             <h2>My Works:</h2>
             
             <div className="container">

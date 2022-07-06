@@ -20,7 +20,7 @@ export default function HomePage(){
                   
                     <section className="intro-text  d-flex align-items-center flex-column">
                                 <motion.h2
-                                    initial={{x: "-100vw"}}
+                                    initial={{x: "-100%"}}
                                     animate={{x: 0}}
                                     transition={{delay: 0.5}}
                                 >
@@ -28,7 +28,7 @@ export default function HomePage(){
                                 </motion.h2>
                             
                             <motion.p
-                                 initial={{x: "100vw"}}
+                                 initial={{x: "100%"}}
                                  animate={{x: 0}}
                                  transition={{delay: 0.5}}
                                 >
@@ -57,7 +57,6 @@ export default function HomePage(){
                       </a>
                         
                     </div>
-
                 </motion.div>
 
         </div>

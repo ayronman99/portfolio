@@ -8,6 +8,7 @@ import './App.css';
 
 
 function App() {
+  
   return (
     <div className="main-cont">   
       <motion.div
@@ -16,11 +17,15 @@ function App() {
        transition={{ delay: .25 }}
       >
             <Navbar />
-           <HomePage />
-      </motion.div>
 
+           <HomePage />
+           
+      </motion.div>
+      
       <Skills />
+     
       <Works />
+
       <Contacts />
    
    </div>

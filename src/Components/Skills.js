@@ -5,21 +5,15 @@ import JSCRIPT from '../assets/images/PNG/js-logo.png';
 import NODEJS from '../assets/images/PNG/nodejs.png';
 import REACTLOGO from '../assets/images/PNG/reactjs.png';
 import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import '../assets/styles/skills.css';
 
 
 export default function Skills(){
-
-    const {ref, inView} = useInView();
-
-    useEffect(() => {
-        console.log("scroll is: ", inView);
-    })
+   
+   
     return (
-    <div id="skills"  className="skills container mb-5">
+    <div id="skills"  className="skills container mt-5 mb-5" >
           <motion.div 
-          
           className="quote-container"
           initial={{x: "-100%"}}
           whileInView={{ x: 0 }}
@@ -48,35 +42,54 @@ export default function Skills(){
 
         <div className="skills-logo container mt-5">
             <div className="row">
-                <motion.div 
-                className="col"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                >
-                <img className="img-fluid" src={HTML5} alt="html5"/>
-                </motion.div>
-                <div className="col">
-                <img className="img-fluid" src={JSCRIPT} alt="javascript"/>
-                </div>
-                <div className="col">
-                <img className="img-fluid" src={CSS3} alt="css3"/>
-                </div>
+                    <motion.div 
+                    className="col"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1, transition: {delay: .2}}}
+                    viewport={{ once: true }}
+                    >
+                        <img className="img-fluid" src={HTML5} alt="html5"/>
+                    </motion.div>
+                    <motion.div 
+                    className="col"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1, transition: {delay: .4}}}
+                    viewport={{ once: true }}
+                    >
+                        <img className="img-fluid" src={JSCRIPT} alt="javascript"/>
+                    </motion.div>
+                    <motion.div 
+                    className="col"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1, transition: {delay: .6}}}
+                    viewport={{ once: true }}
+                    >
+                        <img className="img-fluid" src={CSS3} alt="css3"/>
+                    </motion.div>
+
+             </div>
                 
-                <div ref={ref} className="row mt-3 mx-auto">
-                    <div className="col-6">
-                    <img className="img-fluid" src={NODEJS} alt="nodejs"/>
-                    </div>
-                    <div className="col-6">
-                    <img className="reactlogo img-fluid" src={REACTLOGO} alt="reactlogo"/>
-                    </div>
+                <div  className="row mt-3 mx-auto">
+
+                        <motion.div 
+                        className="col-6"
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1, transition: {delay: .8}}}
+                        viewport={{ once: true }}
+                        >
+                            <img className="img-fluid" src={NODEJS} alt="nodejs"/>
+                        </motion.div>
+                        
+                        <motion.div 
+                        className="col-6"
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1, transition: {delay: 1}}}
+                        viewport={{ once: true }}
+                        >
+                            <img className="reactlogo img-fluid" src={REACTLOGO} alt="reactlogo"/>
+                        </motion.div>
                 </div>
             </div>
-        </div>
-        {/* <div className="container mt-4">
-            
-        </div> */}
-
     </div>
     )
 }

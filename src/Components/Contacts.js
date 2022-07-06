@@ -1,16 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserCircle, faMobilePhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faGithub, faLinkedin, faTwitter} from '@fortawesome/free-brands-svg-icons';
 import '../assets/styles/contacts.css';
 
 export default function Contacts(){
 
+    
 
-    const betaClick = (e) =>{
-        e.preventDefault();
-        alert("Submitted! But not really this is still in beta :D.")
-    }
     return(
         <div>
             <div id="contacts" className="contacts-section mt-3 vh-100">
