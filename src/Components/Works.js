@@ -22,7 +22,7 @@ const worksVariants = {
 export default function Works() {
    
     return (
-        <div id="works" className="works mt-5">
+        <div id="works" className="works mt-5 mb-5">
             <motion.h2
                 initial={{opacity: 0, scale: 0}}
                 whileInView={{opacity: 1, scale: 1 }}
@@ -39,7 +39,7 @@ export default function Works() {
                         variants={worksVariants}
                         initial={"offscreen"}
                         whileInView={"onscreen"}
-                        viewport={{ once: true, amount: 0.8 }}
+                        viewport={{ once: true, amount: 0.4 }}
                     >
                         <div className="card m-auto">
                             <img src="https://t2.genius.com/unsafe/276x276/https%3A%2F%2Fimages.genius.com%2F9b98cc2c1f1d0be4ecc88ba0f8d80851.350x350x1.jpg" className="card-img-top" alt="..."/>

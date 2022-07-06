@@ -1,6 +1,7 @@
 .contacts-section {
   color: white;
   scroll-margin-top: 5rem;
+  height: 400px;
 }
 .contacts-section h3 {
   font-size: 2.5rem;
@@ -8,6 +9,13 @@
 
 #emailHelp {
   color: white;
+}
+
+.link-email {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #cae1f4;
 }
 
 .img-mario {
@@ -28,21 +36,13 @@
 }
 .social-holder a svg {
   transition: all 0.5s ease-in-out;
-  background-color: rgba(255, 255, 255, 0.849);
   border-radius: 5px;
 }
 .social-holder .linkedIn {
   color: #0a66c2;
 }
-.social-holder .linkedIn svg {
-  padding: 2.5px;
-}
 .social-holder .gitHub {
   color: #cae1f4;
-}
-.social-holder .gitHub svg {
-  background-color: rgb(114, 111, 108);
-  padding: 2.5px;
 }
 .social-holder .twitter {
   color: #1DA1F2;
