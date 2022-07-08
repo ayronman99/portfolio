@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import myLogo from "../assets/images/PNG/newEnm.png";
 import '../assets/styles/navbar.css';
 
@@ -20,18 +20,24 @@ export default function NavbarTop(){
     }
   }
 
-  window.addEventListener("scroll", changeBackground);
-  
+  useEffect(()=> {
+    window.addEventListener("scroll", changeBackground);
+  })
+
+ 
+
     return(
-        <nav className={`navbar navbar-dark fixed-top navbar-expand-sm ${navbarBg && 'show-bg'}`}>
+        <nav className={`navbar fixed-top navbar-expand-sm ${navbarBg &&'show-bg'}`} >
           <div className="container-fluid">
             <a className="navbar-brand" href="#">
               <img className="img-fluid" src={myLogo} alt="Lee's brand logo"/>
               </a>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
+            <button className="navbar-toggler" 
+             type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon">
+              </span>
             </button>
-            <div className={`collapse navbar-collapse ${clicked && ""}`} id="navbarNavAltMarkup">
+            <div className={`navbar-collapse collapse  ${clicked && ""}`} id="navbarNavAltMarkup">
               <div className="navbar-nav">
                 <a className="nav-link" href="#home" onClick={navClicked}>Home</a>
                 <a className="nav-link" href="#skills" onClick={navClicked}>Skills</a>

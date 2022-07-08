@@ -7,3 +7,9 @@
   background-image: url('./assets/images/SVG/endless-constellation.svg'); /* background by SVGBackgrounds.com */
   overflow-x: hidden;
 }
+
+
+.footer {
+  border-top: 1.5px;
+  background-color: #A8A4CE;
+}

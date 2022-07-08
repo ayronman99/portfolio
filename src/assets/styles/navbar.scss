@@ -1,16 +1,22 @@
 .navbar{
     transition: all .5s ease-in-out;
-    background-color: transparent;
 }
 
 .navbar-brand {
     // background-color: aquamarine;
     // border: 3px solid red;
-    width: 4rem;
+    // ${clicked && "show-bg"} 
+    padding: 0;
+    width: 3.8rem;
 }
 
-
+.navbar-nav {
+    a{
+        color: #e0dddd;
+    }
+}
 
 .show-bg{
-    background-color: rgba(45, 51, 45, 0.966) !important;
+    background-color: #495c83f3 !important;
 }
+

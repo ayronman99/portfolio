@@ -16,7 +16,7 @@ export default function Skills(){
    
    
     return (
-    <div id="skills"  className="skills container mt-5" >
+    <div id="skills"  className="skills container" >
           <motion.div 
           className="quote-container"
           initial={{x: "-100%"}}

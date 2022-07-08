@@ -27,7 +27,9 @@ function App() {
       <Works />
 
       <Contacts />
-   
+     <div className='footer'>
+        Copyright&copy; <b>Lee</b>
+     </div>
    </div>
   );
 }

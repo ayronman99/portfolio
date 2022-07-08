@@ -1,6 +1,8 @@
 .skills {
   color: rgb(224, 216, 216);
-  scroll-margin-top: 5rem;
+  scroll-margin-top: 5em;
+  margin-top: 2.5em;
+  border: 1px dotted transparent;
 }
 
 .quote-container {
