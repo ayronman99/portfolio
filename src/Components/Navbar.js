@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import {Nav, Navbar, Container, Image} from "react-bootstrap";
 import myLogo from "../assets/images/PNG/newEnm.png";
 import '../assets/styles/navbar.css';
 
@@ -24,9 +23,11 @@ export default function NavbarTop(){
   window.addEventListener("scroll", changeBackground);
   
     return(
-        <nav className={`navbar fixed-top navbar-expand-sm bg-primary ${navbarBg && 'show-bg'}`}>
+        <nav className={`navbar navbar-dark fixed-top navbar-expand-sm ${navbarBg && 'show-bg'}`}>
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">LeeLacay</a>
+            <a className="navbar-brand" href="#">
+              <img className="img-fluid" src={myLogo} alt="Lee's brand logo"/>
+              </a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>

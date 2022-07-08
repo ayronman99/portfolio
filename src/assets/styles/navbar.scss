@@ -1,8 +1,16 @@
 .navbar{
     transition: all .5s ease-in-out;
-    background-color: transparent !important;
+    background-color: transparent;
 }
 
+.navbar-brand {
+    // background-color: aquamarine;
+    // border: 3px solid red;
+    width: 4rem;
+}
+
+
+
 .show-bg{
-    background-color: rgba(139, 151, 139, 0.884) !important;
+    background-color: rgba(45, 51, 45, 0.966) !important;
 }
