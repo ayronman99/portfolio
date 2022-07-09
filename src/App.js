@@ -28,7 +28,7 @@ function App() {
 
       <Contacts />
      <div className='footer'>
-        Copyright&copy; <b>Lee</b>
+        Copyright&copy; 2022 <b>Lee</b> 
      </div>
    </div>
   );

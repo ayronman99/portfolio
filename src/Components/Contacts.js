@@ -32,8 +32,8 @@ export default function Contacts(){
                     </p>
                     
                 </div>
-               <div className="social-media container">
-                <div className="social-holder row row-cols-sm-2 row-cols-md-4">
+               <div className="social-media container d-flex justify-content-center">
+                <div className="social-holder row row-cols-sm-2 row-cols-md-4 w-50">
                      <motion.div className="col"
                          initial={{ opacity: 0 }}
                          whileInView={{ opacity: 1, transition: {delay: .25}}}

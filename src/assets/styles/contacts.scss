@@ -2,6 +2,7 @@
         color: white;
         scroll-margin-top: 5rem;
         height: 400px;
+        
 
         h3{
             font-size: 2.5rem;
@@ -21,7 +22,6 @@
 
 
 .img-mario{
-    border: 2px solid red;
     border-radius: 50%;
     width: 5rem;
     height: auto;
@@ -30,11 +30,10 @@
 .social-holder {
     font-size: 3rem;
     // border: 2px solid red;
-    margin: auto;
     .col {
         margin: auto;
         color: #141414;
-        width: 5em;
+        width: 2em;
     }
     a{
         svg{
@@ -70,6 +69,7 @@
 
 @media screen and (min-width: 768px){
     .social-holder {
+        
         .linkedIn {
             color: #141414;
             svg{
@@ -80,6 +80,7 @@
                 color: #0a66c2;
                 svg{
                     background-color: transparent;
+                    transform: translateY(-10px)
                 }
             }  
         }
@@ -93,6 +94,7 @@
                 color: #cae1f4;
                 svg{
                     background-color: transparent;
+                    transform: translateY(-10px)
                 }
             }    
         }
@@ -101,11 +103,13 @@
             color: #141414;
             svg{
                 background-color: antiquewhite;
+                
             }
             &:hover {
                 color: #1DA1F2;
                 svg{
                     background-color: transparent;
+                    transform: translateY(-10px)
                 }
             }
         }
@@ -119,6 +123,7 @@
                 color: #4267B2;
                 svg{
                     background-color: transparent;
+                    transform: translateY(-10px)
                 }
             }  
             

@@ -19,7 +19,6 @@
 }
 
 .img-mario {
-  border: 2px solid red;
   border-radius: 50%;
   width: 5rem;
   height: auto;
@@ -27,12 +26,11 @@
 
 .social-holder {
   font-size: 3rem;
-  margin: auto;
 }
 .social-holder .col {
   margin: auto;
   color: #141414;
-  width: 5em;
+  width: 2em;
 }
 .social-holder a svg {
   transition: all 0.5s ease-in-out;
@@ -64,6 +62,7 @@
   }
   .social-holder .linkedIn:hover svg {
     background-color: transparent;
+    transform: translateY(-10px);
   }
   .social-holder .gitHub {
     color: #141414;
@@ -76,6 +75,7 @@
   }
   .social-holder .gitHub:hover svg {
     background-color: transparent;
+    transform: translateY(-10px);
   }
   .social-holder .twitter {
     color: #141414;
@@ -88,6 +88,7 @@
   }
   .social-holder .twitter:hover svg {
     background-color: transparent;
+    transform: translateY(-10px);
   }
   .social-holder .facebook {
     color: #141414;
@@ -100,5 +101,6 @@
   }
   .social-holder .facebook:hover svg {
     background-color: transparent;
+    transform: translateY(-10px);
   }
 }/*# sourceMappingURL=contacts.css.map */

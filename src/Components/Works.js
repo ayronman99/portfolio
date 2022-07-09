@@ -36,6 +36,8 @@ export default function Works() {
 
                     <motion.div 
                         className="col mb-3"
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
                         variants={worksVariants}
                         initial={"offscreen"}
                         whileInView={"onscreen"}
@@ -45,6 +47,8 @@ export default function Works() {
                             <img src="https://t2.genius.com/unsafe/276x276/https%3A%2F%2Fimages.genius.com%2F9b98cc2c1f1d0be4ecc88ba0f8d80851.350x350x1.jpg" className="card-img-top" alt="..."/>
                             <div className="card-body">
                                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary  me-2" role="button" data-bs-toggle="button">View Site</a>
+                                <a href="#" class="btn btn-secondary" role="button" data-bs-toggle="button">View Code</a>
                             </div>
                         </div>
                     </motion.div>
@@ -52,29 +56,41 @@ export default function Works() {
                     
                     <motion.div 
                         className="col mb-3"
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
                         variants={worksVariants}initial={"offscreen"}
                         whileInView={"onscreen"}
-                        viewport={{ once: true, amount: 0.7 }}
+                        viewport={{ once: true, amount: 0.3 }}
                     >
                         <div className="card m-auto">
-                            <img src="https://t2.genius.com/unsafe/276x276/https%3A%2F%2Fimages.genius.com%2F9b98cc2c1f1d0be4ecc88ba0f8d80851.350x350x1.jpg" className="card-img-top" alt="..."/>
+                            <a href="#contacts">
+                                <img src="https://t2.genius.com/unsafe/276x276/https%3A%2F%2Fimages.genius.com%2F9b98cc2c1f1d0be4ecc88ba0f8d80851.350x350x1.jpg" className="card-img-top" alt="..."/>
+                            </a>
                             <div className="card-body">
                                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary  me-2" role="button" data-bs-toggle="button">View Site</a>
+                                <a href="#" class="btn btn-secondary" role="button" data-bs-toggle="button">View Code</a>
                             </div>
                         </div>
                     </motion.div>
 
                     <motion.div 
                         className="col mb-3"
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
                         variants={worksVariants}
                         initial={"offscreen"}
                         whileInView={"onscreen"}
-                        viewport={{ once: true, amount: 0.7 }}
+                        viewport={{ once: true, amount: 0.3 }}
                     >
                         <div className="card m-auto">
-                            <img src="https://t2.genius.com/unsafe/276x276/https%3A%2F%2Fimages.genius.com%2F9b98cc2c1f1d0be4ecc88ba0f8d80851.350x350x1.jpg" className="card-img-top" alt="..."/>
+                            <a href="#home">
+                              <img src="https://t2.genius.com/unsafe/276x276/https%3A%2F%2Fimages.genius.com%2F9b98cc2c1f1d0be4ecc88ba0f8d80851.350x350x1.jpg" className="card-img-top" alt="..."/>
+                            </a>
                             <div className="card-body">
                                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary  me-2" role="button" data-bs-toggle="button">View Site</a>
+                                <a href="#" class="btn btn-secondary" role="button" data-bs-toggle="button">View Code</a>
                             </div>
                         </div>
                     </motion.div>
