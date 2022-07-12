@@ -11,6 +11,8 @@ function App() {
   
   return (
     <div className="main-cont">   
+
+     
       <motion.div
        initial={{ opacity: 0 }}
        animate={{ opacity: 1 }}
@@ -21,12 +23,12 @@ function App() {
            <HomePage />
            
       </motion.div>
-      
-      <Skills />
-     
-      <Works />
+          <Skills />
+          
+          <Works />
 
-      <Contacts />
+          <Contacts />
+
      <div className='footer'>
         Copyright&copy; 2022 <b>Lee</b> 
      </div>

@@ -27,8 +27,8 @@ export default function NavbarTop(){
  
 
     return(
-        <nav className={`navbar fixed-top navbar-expand-sm ${navbarBg &&'show-bg'}`} >
-          <div className="container-fluid">
+      <nav id="navbar-to-spy" className={`navbar fixed-top navbar-expand-sm ${navbarBg &&'show-bg'}`} >
+          <div className="container-fluid border border-danger">
             <a className="navbar-brand" href="#">
               <img className="img-fluid" src={myLogo} alt="Lee's brand logo"/>
               </a>
@@ -37,40 +37,53 @@ export default function NavbarTop(){
               <span className="navbar-toggler-icon">
               </span>
             </button>
-            <div className={`navbar-collapse collapse  ${clicked && ""}`} id="navbarNavAltMarkup">
+            <div className={`border d-flex justify-content-center navbar-collapse collapse  ${clicked && ""}`} id="navbarNavAltMarkup">
+
               <div className="navbar-nav">
-                <a className="nav-link" href="#home" onClick={navClicked}>Home</a>
-                <a className="nav-link" href="#skills" onClick={navClicked}>Skills</a>
-                <a className="nav-link" href="#works" onClick={navClicked}>Works</a>
-                <a className="nav-link" href="#contacts" onClick={navClicked}>Contact Me!</a>
+                <a className="nav-link mx-5" href="#home" onClick={navClicked}>Home</a>
+                <a className="nav-link mx-5" href="#skills" onClick={navClicked}>Skills</a>
+                <a className="nav-link mx-5" href="#works" onClick={navClicked}>Works</a>
+                <a className="nav-link mx-5" href="#contacts" onClick={navClicked}>Contact Me!</a>
               </div>
+              
             </div>
           </div>
       </nav>
+
+    
     )
 }
 
 
 
 /*
- <Navbar collapseOnSelect className={`${clicked && 'show-bg'} ${navbarBg && 'active'}`} fixed="top" expand="sm">
-        <Container>
-
-              <Navbar.Brand className="w-25 h-25"  href="#home">
-                   <Image className="brand-logo img-fluid w-75" src={myLogo} alt="lee-logo" />
-              </Navbar.Brand>
+ //   <nav className={`navbar fixed-top navbar-expand-sm ${navbarBg &&'show-bg'}`}>
+    //   <div className="container-fluid">
+    //       <a className="navbar-brand" href="#home">
+    //           <img className="img-fluid" src={myLogo} alt="Lee's brand logo"/>
+    //         </a>
+    //     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    //       <span className="navbar-toggler-icon"></span>
+    //     </button>
+    //     <div className="collapse navbar-collapse" id="navbarSupportedContent">
+    //       <ul className="navbar-nav nav-pills me-auto mb-2 mb-lg-0">
             
-            <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={navClicked}/>
-        
-          <Navbar.Collapse id="basic-navbar-nav" >
-            <Nav>
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#skills">Skills</Nav.Link>
-              <Nav.Link href="#works">Works</Nav.Link>
-              <Nav.Link href="#contacts">Contact Me!</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-  </Navbar>
+    //           <li className="nav-item">
+    //             <a className="nav-link" href="#home">Home</a>
+    //           </li>
+    //           <li className="nav-item">
+    //             <a className="nav-link" href="#skills">Skills</a>
+    //           </li>
+    //           <li className="nav-item">
+    //             <a className="nav-link" href="#works">Works</a>
+    //           </li>
+    //           <li className="nav-item">
+    //             <a className="nav-link" href="#contacts">Contacts</a>
+    //           </li>
+           
+    //       </ul>
+    //     </div>
+    //   </div>
+    // </nav>
 
 */

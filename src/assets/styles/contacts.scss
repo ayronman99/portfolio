@@ -18,6 +18,7 @@
     font-size: 1rem;
     font-weight: bold;
     color:#cae1f4;
+    
 }
 
 
@@ -27,7 +28,8 @@
     height: auto;
 }
 
-.social-holder {
+.social-holder {//
+    
     font-size: 3rem;
     // border: 2px solid red;
     .col {
@@ -37,7 +39,7 @@
     }
     a{
         svg{
-            transition: all .5s ease-in-out;
+            transition: all .25s ease-in-out;
             // background-color: rgba(133, 119, 119, 0.849);
             border-radius: 5px;
         }

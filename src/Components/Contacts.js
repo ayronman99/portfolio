@@ -46,17 +46,17 @@ export default function Contacts(){
 
                         <motion.div className="col"
                          initial={{ opacity: 0 }}
-                         whileInView={{ opacity: 1, transition: {delay: .5}}}
+                         whileInView={{ opacity: 1, transition: {delay: .3}}}
                          viewport={{ once: true }}
                      >
-                            <a className="gitHub" href="https://www.github.com/" target="_blank">
+                            <a className="gitHub" href="https://github.com/ayronman99" target="_blank">
                                 <FontAwesomeIcon icon={faGithub} />
                                 </a>
                         </motion.div>
 
                         <motion.div className="col"
                          initial={{ opacity: 0 }}
-                         whileInView={{ opacity: 1, transition: {delay: .75}}}
+                         whileInView={{ opacity: 1, transition: {delay: .35}}}
                          viewport={{ once: true }}
                      >
                            <a className="twitter" href="https://www.twitter.com/" target="_blank">
@@ -66,7 +66,7 @@ export default function Contacts(){
 
                         <motion.div className="col"
                          initial={{ opacity: 0 }}
-                         whileInView={{ opacity: 1, transition: {delay: 1}}}
+                         whileInView={{ opacity: 1, transition: {delay: .4}}}
                          viewport={{ once: true }}
                      >
                             <a className="facebook" href="https://www.facebook.com/" target="_blank">

@@ -3,10 +3,12 @@ import { motion } from "framer-motion";
 
 const worksVariants = {
     offscreen: {
-        y: 150
+        y: 150,
+        opacity: 0
       },
       onscreen: {
         y: 0,
+        opacity: 1,
         transition: {
           type: "spring",
           bounce: 0.4,
@@ -22,10 +24,9 @@ const WorksHolder = ({imgSrc, worksAltTxt, workDesc, workSrc, workSite}) => {
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                         variants={worksVariants}
-                        transition={{delay: .2}}
                         initial={"offscreen"}
                         whileInView={"onscreen"}
-                        viewport={{ once: true, amount: 0.3 }}
+                        viewport={{ once: true }}
                     >
                         <div className="card m-auto">
                           <a href={workSite} target="_blank">
