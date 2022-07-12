@@ -2,6 +2,7 @@ import React, {useEffect} from "react";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { motion } from "framer-motion";
+import WorksHolder from "./subComponents/WorksHolder";
 import '../assets/styles/works.css';
 
 const worksVariants = {
@@ -34,66 +35,30 @@ export default function Works() {
             <div className="container">
                 <div className="row row-cols-1 row-cols-md-3">
 
-                    <motion.div 
-                        className="col mb-3"
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        variants={worksVariants}
-                        initial={"offscreen"}
-                        whileInView={"onscreen"}
-                        viewport={{ once: true, amount: 0.4 }}
-                    >
-                        <div className="card m-auto">
-                            <img src="https://t2.genius.com/unsafe/276x276/https%3A%2F%2Fimages.genius.com%2F9b98cc2c1f1d0be4ecc88ba0f8d80851.350x350x1.jpg" className="card-img-top" alt="..."/>
-                            <div className="card-body">
-                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary  me-2" role="button" data-bs-toggle="button">View Site</a>
-                                <a href="#" class="btn btn-secondary" role="button" data-bs-toggle="button">View Code</a>
-                            </div>
-                        </div>
-                    </motion.div>
 
-                    
-                    <motion.div 
-                        className="col mb-3"
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        variants={worksVariants}initial={"offscreen"}
-                        whileInView={"onscreen"}
-                        viewport={{ once: true, amount: 0.3 }}
-                    >
-                        <div className="card m-auto">
-                            <a href="#contacts">
-                                <img src="https://t2.genius.com/unsafe/276x276/https%3A%2F%2Fimages.genius.com%2F9b98cc2c1f1d0be4ecc88ba0f8d80851.350x350x1.jpg" className="card-img-top" alt="..."/>
-                            </a>
-                            <div className="card-body">
-                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary  me-2" role="button" data-bs-toggle="button">View Site</a>
-                                <a href="#" class="btn btn-secondary" role="button" data-bs-toggle="button">View Code</a>
-                            </div>
-                        </div>
-                    </motion.div>
+                    <WorksHolder 
+                        imgSrc={"https://t2.genius.com/unsafe/276x276/https%3A%2F%2Fimages.genius.com%2F9b98cc2c1f1d0be4ecc88ba0f8d80851.350x350x1.jpg"}
+                        worksAltTxt={"Ben&Ben project"}
+                        workDesc={"Some quick example text to build on the card title and make up the bulk of the card's content."}
+                        workSite={"https://www.google.com"}
+                        workSrc={"https://www.github.com"}
+                    />
 
-                    <motion.div 
-                        className="col mb-3"
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        variants={worksVariants}
-                        initial={"offscreen"}
-                        whileInView={"onscreen"}
-                        viewport={{ once: true, amount: 0.3 }}
-                    >
-                        <div className="card m-auto">
-                            <a href="#home">
-                              <img src="https://t2.genius.com/unsafe/276x276/https%3A%2F%2Fimages.genius.com%2F9b98cc2c1f1d0be4ecc88ba0f8d80851.350x350x1.jpg" className="card-img-top" alt="..."/>
-                            </a>
-                            <div className="card-body">
-                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary  me-2" role="button" data-bs-toggle="button">View Site</a>
-                                <a href="#" class="btn btn-secondary" role="button" data-bs-toggle="button">View Code</a>
-                            </div>
-                        </div>
-                    </motion.div>
+                    <WorksHolder 
+                        imgSrc={"https://t2.genius.com/unsafe/327x327/https%3A%2F%2Fimages.genius.com%2Ff15065ef66cd717c267d3f2e37313bc1.1000x1000x1.jpg"}
+                        worksAltTxt={"Dawn FM"}
+                        workDesc={"Some quick example text to build on the card title and make up the bulk of the card's content."}
+                        workSite={"https://www.youtube.com"}
+                        workSrc={"https://www.github.com"}
+                    />
+
+                    <WorksHolder 
+                        imgSrc={"https://t2.genius.com/unsafe/284x284/https%3A%2F%2Fimages.genius.com%2Fee17f873c76c455455e879e3def486f8.1000x1000x1.jpg"}
+                        worksAltTxt={"Smithereens"}
+                        workDesc={"Some quick example text to build on the card title and make up the bulk of the card's content."}
+                        workSite={"https://www.facebook.com"}
+                        workSrc={"https://www.github.com"}
+                    />
 
                 </div>
             </div>
@@ -102,7 +67,7 @@ export default function Works() {
                 <motion.p className="me-3 mt-2"
                     initial={{x: '-100%'}}
                     whileInView={{x: 0, transition: { type: "spring", damping: 5 }}}
-                    viewport={{ once: true, amount: 0.7 }}
+                    viewport={{ once: true }}
                 > 
                     See More  
                </motion.p>
