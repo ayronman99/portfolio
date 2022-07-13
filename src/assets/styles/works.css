@@ -1,15 +1,16 @@
 .works {
-  padding-top: 60px;
+  padding-top: 180px;
   margin-bottom: 60px;
   color: white;
+  border: 3px solid rgb(163, 206, 94);
 }
 .works h2 {
   font-size: 3rem;
   margin-bottom: 2rem;
 }
-.works .container .card {
+.works .container .col {
   color: black;
-  width: 75%;
+  max-width: 75%;
 }
 .works .chev-right-1 {
   font-size: 2rem;

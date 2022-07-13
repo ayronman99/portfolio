@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import myLogo from "../assets/images/PNG/newEnm.png";
 import '../assets/styles/navbar.css';
 
@@ -7,12 +7,12 @@ export default function NavbarTop(){
   const [clicked, isClicked] = useState(false);
   const [navbarBg, setNavbarBG] = useState(false);
 
+
   const navClicked = () => {
     isClicked(!clicked)
   }
 
   const changeBackground = () => {
-    // console.log(window.scrollY )
     if(window.scrollY >= 150){
       setNavbarBG(true)
     } else {
@@ -20,11 +20,11 @@ export default function NavbarTop(){
     }
   }
 
+
   useEffect(()=> {
     window.addEventListener("scroll", changeBackground);
+   
   })
-
- 
 
     return(
        <nav id="navbar-spy" className={`navbar fixed-top navbar-expand-sm ${navbarBg && 'show-bg navbar-dark'}`}>
@@ -43,7 +43,7 @@ export default function NavbarTop(){
                 <a className="nav-link" href="#home" onClick={navClicked}>Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#skills" onClick={navClicked}>Skills</a>
+                <a  className="nav-link" href="#skills" onClick={navClicked}>Skills</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#works" onClick={navClicked}>Works</a>
@@ -56,8 +56,6 @@ export default function NavbarTop(){
         </div>
       </div>
     </nav>
-
-    
     )
 }
 /**

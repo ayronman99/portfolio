@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, forwardRef } from "react";
 import HTML5 from '../assets/images/PNG/html5.png';
 import CSS3 from '../assets/images/PNG/css3.png';
 import JSCRIPT from '../assets/images/PNG/js-logo.png';
@@ -8,7 +8,6 @@ import MONGODB from '../assets/images/PNG/mongodb-logo.png';
 import BOOTSTRAP from '../assets/images/SVG/bootstrap-logo.svg';
 import SASS from '../assets/images/PNG/sass-logo.png';
 import SkillsHolder from "./subComponents/SkillsHolder";
-
 import { motion } from "framer-motion";
 import '../assets/styles/skills.css';
 
@@ -16,8 +15,9 @@ import '../assets/styles/skills.css';
 export default function Skills(){
    
    
+
     return (
-    <div id="skills"  className="skills container" >
+    <div id="skills"  className="skills container">
           <motion.div 
           className="quote-container"
           initial={{x: "-100%"}}
@@ -129,7 +129,7 @@ export default function Skills(){
                     </div>
                     <SkillsHolder
                             initial={{ opacity: 0 }}
-                            whileInView={{ opacity: 1, transition: {delay: .75}}}
+                            whileInView={{ opacity: 1, transition: {delay: .2}}}
                             viewport={{ once: true, amount: 0.8  }}
                             srcImg={HTML5}
                             altTxt={'html5-logo'}

@@ -6,10 +6,10 @@ import unDrawProud from '../assets/images/SVG/undrawproud.svg';
 
 import "../assets/styles/homepage.css";
 
-export default function HomePage(){
+export default function HomePage({homeRef}){
 
     return(
-        <div id="home" className="home-page vh-100 text-bg-primary d-flex justify-content-center flex-column">
+        <div ref={homeRef} id="home" className="home-page vh-100 text-bg-primary d-flex justify-content-center flex-column">
                 <div className="top-greeting d-flex align-items-center flex-column">
             
                     <motion.img className="center-logo" src={unDrawProud} alt="test" 

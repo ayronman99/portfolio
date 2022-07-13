@@ -5,12 +5,12 @@ import { faFacebook, faGithub, faLinkedin, faTwitter} from '@fortawesome/free-br
 import { motion } from "framer-motion";
 import '../assets/styles/contacts.css';
 
-export default function Contacts(){
+export default function Contacts({contactsRef}){
 
     
 
     return(
-            <div id="contacts" className="contacts-section mt-5">
+            <div ref={contactsRef} id="contacts" className="contacts-section mt-5">
                   <motion.h3
                     initial={{x: '-100%'}}
                     whileInView={{ x: 0, transition: { type: "spring", damping: 4 } }}

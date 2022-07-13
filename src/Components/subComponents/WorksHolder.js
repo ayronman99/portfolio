@@ -20,7 +20,7 @@ const worksVariants = {
 const WorksHolder = ({imgSrc, worksAltTxt, workDesc, workSrc, workSite}) => {
     return (
         <motion.div 
-                        className="col mb-3"
+                        className="col m-2 p-0"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                         variants={worksVariants}
@@ -28,17 +28,17 @@ const WorksHolder = ({imgSrc, worksAltTxt, workDesc, workSrc, workSite}) => {
                         whileInView={"onscreen"}
                         viewport={{ once: true }}
                     >
-                        <div className="card m-auto">
+                        <div className="card">
                           <a href={workSite} target="_blank">
                               <img src={imgSrc} className="card-img-top" alt={worksAltTxt}/>
                             </a>
                             <div className="card-body">
                                 <p className="card-text">{workDesc}</p>
-                                <div className="row row-cols-md-1 g-2">
+                                <div className="row row-cols-1 row-cols-md-1 g-1">
                                  <div className="col-1"></div>
                                     <a href={workSite} target="_blank" className="col-4 btn btn-primary" role="button">View Site</a>
                                     <div className="col-2"></div>
-                                    <a href={workSrc} target="_blank" className="col-4 btn btn-secondary" role="button">View Code</a>
+                                    <a href={workSrc} target="_blank" className="col-4 btn btn-secondary" role="button">See Code</a>
                                     <div className="col-1"></div>
 
                                 </div>

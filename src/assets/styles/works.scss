@@ -3,9 +3,10 @@
 .works {
     // scroll-margin-top: 3rem;
     // scroll-padding-top: 25px;
-    padding-top: 60px;
+    padding-top: 180px;
     margin-bottom: 60px;
     color: white;
+    border: 3px solid rgb(163, 206, 94);
     
     h2{
         font-size: 3rem;
@@ -13,9 +14,9 @@
     }
 
     .container {
-        .card{
+        .col{
             color: black;
-            width: 75%;
+            max-width: 75%;
         }
     }
 

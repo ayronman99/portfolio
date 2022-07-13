@@ -20,10 +20,10 @@ const worksVariants = {
 }
 
 
-export default function Works() {
+export default function Works({worksRef}) {
    
     return (
-        <div id="works" className="works">
+        <div ref={worksRef} id="works" className="works">
             <motion.h2
                 initial={{opacity: 0, scale: 0}}
                 whileInView={{opacity: 1, scale: 1 }}
@@ -33,7 +33,7 @@ export default function Works() {
             </motion.h2>
             
             <div className="container">
-                <div className="row row-cols-1 row-cols-md-2">
+                <div className="row d-flex justify-content-around row-cols-1 row-cols-md-2 row-cols-lg-3">
 
 
                     <WorksHolder 
