@@ -1,3 +1,5 @@
+import React, { useEffect } from 'react';
+
 import Navbar from './Components/Navbar';
 import HomePage from './Components/HomePage';
 import Skills from './Components/Skills'; 
@@ -8,6 +10,18 @@ import './App.css';
 
 
 function App() {
+
+  useEffect(()=> {
+    window.addEventListener( "resize", ResizeWindow);
+
+    function ResizeWindow(){
+      let dataSpyList = [].slice.call(document.querySelectorAll('[data-bs-spy="scroll"]'));
+
+      dataSpyList.forEach(dataSpyElement => {
+        bootstrap.ScrollSpy.getInstance(dataSpyElement).refresh();
+      })
+    }
+  })
   
   return (
     <div className="main-cont">   

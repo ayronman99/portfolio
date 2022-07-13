@@ -23,7 +23,7 @@ const worksVariants = {
 export default function Works() {
    
     return (
-        <div id="works" className="works mt-5 mb-5">
+        <div id="works" className="works">
             <motion.h2
                 initial={{opacity: 0, scale: 0}}
                 whileInView={{opacity: 1, scale: 1 }}
@@ -33,7 +33,7 @@ export default function Works() {
             </motion.h2>
             
             <div className="container">
-                <div className="row row-cols-1 row-cols-md-3">
+                <div className="row row-cols-1 row-cols-md-2">
 
 
                     <WorksHolder 

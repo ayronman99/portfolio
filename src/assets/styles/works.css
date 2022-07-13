@@ -1,5 +1,6 @@
 .works {
-  scroll-margin-top: 5rem;
+  padding-top: 60px;
+  margin-bottom: 60px;
   color: white;
 }
 .works h2 {
