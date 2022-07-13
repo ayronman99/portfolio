@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.2b1866aa.css",
-    "main.js": "/portfolio/static/js/main.803bfa14.js",
+    "main.css": "/portfolio/static/css/main.5aa7c21b.css",
+    "main.js": "/portfolio/static/js/main.b86c09e7.js",
     "static/js/787.68dbee1e.chunk.js": "/portfolio/static/js/787.68dbee1e.chunk.js",
     "static/media/pixabay.svg": "/portfolio/static/media/pixabay.aebe2b0ec76a57594680.svg",
     "static/media/js-logo.png": "/portfolio/static/media/js-logo.489572f92f0d9e486794.png",
@@ -14,14 +14,14 @@
     "static/media/sass-logo.png": "/portfolio/static/media/sass-logo.95acddf06be5308d9a94.png",
     "static/media/mongodb-logo.png": "/portfolio/static/media/mongodb-logo.940824112db2f1788f28.png",
     "static/media/bootstrap-logo.svg": "/portfolio/static/media/bootstrap-logo.b91717f3b8ef81a7bf2e8b03a9579108.svg",
-    "static/media/endless-constellation.svg": "/portfolio/static/media/endless-constellation.718c634334d28658e1d1.svg",
     "index.html": "/portfolio/index.html",
-    "main.2b1866aa.css.map": "/portfolio/static/css/main.2b1866aa.css.map",
-    "main.803bfa14.js.map": "/portfolio/static/js/main.803bfa14.js.map",
+    "static/media/endless-constellation.svg": "/portfolio/static/media/endless-constellation.718c634334d28658e1d1.svg",
+    "main.5aa7c21b.css.map": "/portfolio/static/css/main.5aa7c21b.css.map",
+    "main.b86c09e7.js.map": "/portfolio/static/js/main.b86c09e7.js.map",
     "787.68dbee1e.chunk.js.map": "/portfolio/static/js/787.68dbee1e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b1866aa.css",
-    "static/js/main.803bfa14.js"
+    "static/css/main.5aa7c21b.css",
+    "static/js/main.b86c09e7.js"
   ]
 }
