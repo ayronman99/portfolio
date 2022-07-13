@@ -27,7 +27,7 @@ export default function NavbarTop(){
  
 
     return(
-       <nav id="navbar-spy" className={`navbar navbar-dark fixed-top navbar-expand-sm ${navbarBg &&'show-bg'}`}>
+       <nav id="navbar-spy" className={`navbar fixed-top navbar-expand-sm ${navbarBg && 'show-bg navbar-dark'}`}>
       <div className="container-fluid">
           <a className="navbar-brand" href="#home">
               <img className="img-fluid" src={myLogo} alt="Lee's brand logo"/>
