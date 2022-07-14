@@ -1,15 +1,25 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import unDrawProud from '../assets/images/SVG/undrawproud.svg';
-
 import "../assets/styles/homepage.css";
 
-export default function HomePage({homeRef}){
+export default function HomePage({ homeRefHandler }){
+
+    const {ref, inView} = useInView({ threshold: 0.4 });
+
+    const homeInternalRefHandler = () => {
+        homeRefHandler(inView)
+    }
+    
+    useEffect(()=> {
+        homeInternalRefHandler()
+    })
 
     return(
-        <div ref={homeRef} id="home" className="home-page vh-100 text-bg-primary d-flex justify-content-center flex-column">
+        <div ref={ref} id="home" className="home-page vh-100 text-bg-primary d-flex justify-content-center flex-column">
                 <div className="top-greeting d-flex align-items-center flex-column">
             
                     <motion.img className="center-logo" src={unDrawProud} alt="test" 

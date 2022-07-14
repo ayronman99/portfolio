@@ -1,4 +1,4 @@
-import React, { useEffect, forwardRef } from "react";
+import React, { useEffect } from "react";
 import HTML5 from '../assets/images/PNG/html5.png';
 import CSS3 from '../assets/images/PNG/css3.png';
 import JSCRIPT from '../assets/images/PNG/js-logo.png';
@@ -9,15 +9,27 @@ import BOOTSTRAP from '../assets/images/SVG/bootstrap-logo.svg';
 import SASS from '../assets/images/PNG/sass-logo.png';
 import SkillsHolder from "./subComponents/SkillsHolder";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 import '../assets/styles/skills.css';
 
 
-export default function Skills(){
+export default function Skills({skillRefHandler}){
    
-   
+    const { ref, inView } = useInView({threshold: 0.55});
+
+    const skillsInternalRefHandler = () => {
+        skillRefHandler(inView);
+    }
+
+    useEffect(()=> {
+        skillsInternalRefHandler()
+    })
+
+    
 
     return (
-    <div id="skills"  className="skills container">
+    <div ref={ref} id="skills"  className="skills container">
           <motion.div 
           className="quote-container"
           initial={{x: "-100%"}}
@@ -59,7 +71,7 @@ export default function Skills(){
 
                     <SkillsHolder
                         initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1, transition: {delay: .4}}}
+                        whileInView={{ opacity: 1, transition: {delay: .23}}}
                         viewport={{ once: true }}
                         srcImg={REACTLOGO}
                         altTxt={'react-logo'}
@@ -68,7 +80,7 @@ export default function Skills(){
 
                     <SkillsHolder
                         initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1, transition: {delay: .6}}}
+                        whileInView={{ opacity: 1, transition: {delay: .3}}}
                         viewport={{ once: true }}
                         srcImg={JSCRIPT}
                         altTxt={'javascript-logo'}
@@ -85,7 +97,7 @@ export default function Skills(){
 
                         <SkillsHolder
                             initial={{ opacity: 0 }}
-                            whileInView={{ opacity: 1, transition: {delay: .6}}}
+                            whileInView={{ opacity: 1, transition: {delay: .4}}}
                             viewport={{ once: true }}
                             srcImg={MONGODB}
                             altTxt={'mongodb-logo'}
@@ -99,7 +111,7 @@ export default function Skills(){
 
                         <SkillsHolder
                             initial={{ opacity: 0 }}
-                            whileInView={{ opacity: 1, transition: {delay: .4}}}
+                            whileInView={{ opacity: 1, transition: {delay: .45}}}
                             viewport={{ once: true, amount: 0.8  }}
                             srcImg={BOOTSTRAP}
                             altTxt={'bootstrap-logo'}
@@ -108,7 +120,7 @@ export default function Skills(){
 
                         <SkillsHolder
                             initial={{ opacity: 0 }}
-                            whileInView={{ opacity: 1, transition: {delay: .8}}}
+                            whileInView={{ opacity: 1, transition: {delay: .32}}}
                             viewport={{ once: true, amount: 0.8  }}
                             srcImg={SASS}
                             altTxt={'sass-logo'}
@@ -117,7 +129,7 @@ export default function Skills(){
 
                         <SkillsHolder
                             initial={{ opacity: 0 }}
-                            whileInView={{ opacity: 1, transition: {delay: .3}}}
+                            whileInView={{ opacity: 1, transition: {delay: .36}}}
                             viewport={{ once: true, amount: 0.8  }}
                             srcImg={CSS3}
                             altTxt={'css3-logo'}
@@ -129,7 +141,7 @@ export default function Skills(){
                     </div>
                     <SkillsHolder
                             initial={{ opacity: 0 }}
-                            whileInView={{ opacity: 1, transition: {delay: .2}}}
+                            whileInView={{ opacity: 1, transition: {delay: .15}}}
                             viewport={{ once: true, amount: 0.8  }}
                             srcImg={HTML5}
                             altTxt={'html5-logo'}

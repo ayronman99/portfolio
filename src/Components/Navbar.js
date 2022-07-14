@@ -2,7 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import myLogo from "../assets/images/PNG/newEnm.png";
 import '../assets/styles/navbar.css';
 
-export default function NavbarTop(){
+export default function NavbarTop({
+  homeRef, skillRef, worksRef, contactsRef}){
 
   const [clicked, isClicked] = useState(false);
   const [navbarBg, setNavbarBG] = useState(false);
@@ -21,12 +22,18 @@ export default function NavbarTop(){
   }
 
 
+  const homeSpyScroll = `nav-link ${homeRef && "active"}`;
+  const skillSpyScroll = `nav-link ${skillRef && "active"}`;
+  const worksSpyScroll = `nav-link ${worksRef && "active"}`;
+  const contactsSpyScroll = `nav-link ${contactsRef && "active"}`;
+  
   useEffect(()=> {
     window.addEventListener("scroll", changeBackground);
    
   })
 
     return(
+      
        <nav id="navbar-spy" className={`navbar fixed-top navbar-expand-sm ${navbarBg && 'show-bg navbar-dark'}`}>
       <div className="container-fluid">
           <a className="navbar-brand" href="#home">
@@ -40,16 +47,16 @@ export default function NavbarTop(){
           <ul className="navbar-nav nav-pills me-auto mb-2 mb-lg-0">
             
               <li className="nav-item">
-                <a className="nav-link" href="#home" onClick={navClicked}>Home</a>
+                <a className={homeSpyScroll} href="#home" onClick={navClicked}>Home</a>
               </li>
               <li className="nav-item">
-                <a  className="nav-link" href="#skills" onClick={navClicked}>Skills</a>
+                <a  className={skillSpyScroll} href="#skills" onClick={navClicked}>Skills</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#works" onClick={navClicked}>Works</a>
+                <a className={worksSpyScroll} href="#works" onClick={navClicked}>Works</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#contacts" onClick={navClicked}>Contacts</a>
+                <a className={contactsSpyScroll} href="#contacts" onClick={navClicked}>Contacts</a>
               </li>
            
           </ul>

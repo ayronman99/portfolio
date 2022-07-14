@@ -3,14 +3,27 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faGithub, faLinkedin, faTwitter} from '@fortawesome/free-brands-svg-icons';
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import '../assets/styles/contacts.css';
 
-export default function Contacts({contactsRef}){
+export default function Contacts({contactsRefHandler}){
+
+    
+    const { ref, inView } = useInView({threshold: 0.4});
+
+    const contactsInternalRefHandler = () => {
+        contactsRefHandler(inView);
+    }
+
+
+    useEffect(()=> {
+        contactsInternalRefHandler()
+    })
 
     
 
     return(
-            <div ref={contactsRef} id="contacts" className="contacts-section mt-5">
+            <div ref={ref} id="contacts" className="contacts-section mt-5">
                   <motion.h3
                     initial={{x: '-100%'}}
                     whileInView={{ x: 0, transition: { type: "spring", damping: 4 } }}

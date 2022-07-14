@@ -2,6 +2,7 @@ import React, {useEffect} from "react";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import WorksHolder from "./subComponents/WorksHolder";
 import '../assets/styles/works.css';
 
@@ -20,10 +21,22 @@ const worksVariants = {
 }
 
 
-export default function Works({worksRef}) {
+export default function Works({worksRefHandler}) {
+
+    const { ref, inView } = useInView({threshold: .25});
+
+    const worksInternalRefHandler = () => {
+        worksRefHandler(inView);
+    }
+
+
+    useEffect(()=> {
+        worksInternalRefHandler()
+    })
+
    
     return (
-        <div ref={worksRef} id="works" className="works">
+        <div ref={ref} id="works" className="works mt-5">
             <motion.h2
                 initial={{opacity: 0, scale: 0}}
                 whileInView={{opacity: 1, scale: 1 }}
