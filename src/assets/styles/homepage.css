@@ -1,10 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Rajdhani&display=swap");
 .home-page {
-  background-image: url(../images/SVG/pixabay.svg);
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   color: #fff;
+}
+.home-page h2 {
+  font-size: 2rem;
 }
 
 .center-logo {
@@ -75,7 +78,7 @@
     width: 350px;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .intro-text p {
     width: 50%;
   }

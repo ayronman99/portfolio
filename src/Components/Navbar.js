@@ -3,7 +3,7 @@ import myLogo from "../assets/images/PNG/newEnm.png";
 import '../assets/styles/navbar.css';
 
 export default function NavbarTop({
-  homeRef, skillRef, worksRef, contactsRef}){
+  homeRef, aboutRef, worksRef, contactsRef}){
 
   const [clicked, isClicked] = useState(false);
   const [navbarBg, setNavbarBG] = useState(false);
@@ -23,7 +23,7 @@ export default function NavbarTop({
 
 
   const homeSpyScroll = `nav-link ${homeRef && "active"}`;
-  const skillSpyScroll = `nav-link ${skillRef && "active"}`;
+  const aboutSpyScroll = `nav-link ${aboutRef && "active"}`;
   const worksSpyScroll = `nav-link ${worksRef && "active"}`;
   const contactsSpyScroll = `nav-link ${contactsRef && "active"}`;
   
@@ -50,7 +50,7 @@ export default function NavbarTop({
                 <a className={homeSpyScroll} href="#home" onClick={navClicked}>Home</a>
               </li>
               <li className="nav-item">
-                <a  className={skillSpyScroll} href="#skills" onClick={navClicked}>Skills</a>
+                <a  className={aboutSpyScroll} href="#about" onClick={navClicked}>About</a>
               </li>
               <li className="nav-item">
                 <a className={worksSpyScroll} href="#works" onClick={navClicked}>Works</a>

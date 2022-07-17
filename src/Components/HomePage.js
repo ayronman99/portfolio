@@ -19,32 +19,32 @@ export default function HomePage({ homeRefHandler }){
     })
 
     return(
-        <div ref={ref} id="home" className="home-page vh-100 text-bg-primary d-flex justify-content-center flex-column">
-                <div className="top-greeting d-flex align-items-center flex-column">
+        <div ref={ref} id="home" className="home-page vh-100 d-flex justify-content-center flex-column">
+                <div className="top-greeting d-flex align-items-center flex-column mb-5">
             
-                    <motion.img className="center-logo" src={unDrawProud} alt="test" 
+                    <motion.img className="center-logo" src={unDrawProud} alt="undraw logo intro" 
                         initial={{scale: 0}}
                         animate={{scale: 1}}
                         transition={{delay: 0.5}}
                     />
                   
-                    <section className="intro-text  d-flex align-items-center flex-column">
-                                <motion.h2
-                                    initial={{x: "-100%"}}
+                        <div className="intro-text  d-flex align-items-center flex-column">
+                                    <motion.h2
+                                        initial={{x: "-100%"}}
+                                        animate={{x: 0}}
+                                        transition={{delay: 0.5}}
+                                    >
+                                        Hi, my name is Lee!
+                                    </motion.h2>
+                                
+                                <motion.p
+                                    initial={{x: "100%"}}
                                     animate={{x: 0}}
                                     transition={{delay: 0.5}}
-                                >
-                                    Hi, my name is Lee!
-                                </motion.h2>
-                            
-                            <motion.p
-                                 initial={{x: "100%"}}
-                                 animate={{x: 0}}
-                                 transition={{delay: 0.5}}
-                                >
-                                    I am a web developer with a background in Computer Technology. I am immensely fond technology and innovative ideas. Know more about my skills below to know how I can help! 
-                                </motion.p>
-                </section>
+                                    >
+                                        I am your web developer! And I am immensely fond technology and innovative ideas. Know more about my skills below to know how I can help! 
+                                    </motion.p>
+                    </div>
                 </div>
 
                 <motion.div 
@@ -56,7 +56,7 @@ export default function HomePage({ homeRefHandler }){
 
                     <h3>Explore more</h3>
                     <div className="chevrons-down"> 
-                      <a href="#skills">
+                      <a href="#about">
                          <span className="chev-1">
                             <FontAwesomeIcon icon={faChevronDown} />
                             </span>

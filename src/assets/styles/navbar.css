@@ -9,8 +9,18 @@
 
 .navbar-nav a {
   color: #e0dddd;
+  font-weight: bold;
 }
 
 .show-bg {
   background-color: rgba(73, 92, 131, 0.9529411765) !important;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-brand {
+    margin-left: 3rem;
+  }
+  .navbar-nav {
+    margin-right: 3rem;
+  }
 }/*# sourceMappingURL=navbar.css.map */

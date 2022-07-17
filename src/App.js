@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from './Components/Navbar';
 import HomePage from './Components/HomePage';
-import Skills from './Components/Skills'; 
+import About from './Components/About'; 
 import Works from './Components/Works';
 import Contacts from './Components/Contacts';
 import { motion } from 'framer-motion';
@@ -12,15 +12,15 @@ function App() {
 
   
   const [homeRef, setHomeRef] = useState(false);
-  const [skillRef, setSkillRef] = useState(false);
+  const [aboutRef, setAboutRef] = useState(false);
   const [worksRef, setWorksRef] = useState(false);
   const [contactsRef, setContactsRef] = useState(false);
   
   const homeRefHandler = refStatus => {
     setHomeRef(refStatus);
   }
-  const skillRefHandler = refStatus => {
-    setSkillRef(refStatus);
+  const aboutRefHandler = refStatus => {
+    setAboutRef(refStatus);
   }
   const worksRefHandler = refStatus => {
     setWorksRef(refStatus);
@@ -40,7 +40,7 @@ function App() {
           >
             <Navbar 
               homeRef={homeRef}
-              skillRef={skillRef}
+              aboutRef={aboutRef}
               worksRef={worksRef}
               contactsRef={contactsRef}
 
@@ -50,7 +50,7 @@ function App() {
               
           </motion.div>
 
-          <Skills skillRefHandler={skillRefHandler}/>
+          <About aboutRefHandler={aboutRefHandler}/>
           
           <Works worksRefHandler={worksRefHandler}/>
 
