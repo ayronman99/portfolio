@@ -8,7 +8,7 @@ import "../assets/styles/homepage.css";
 
 export default function HomePage({ homeRefHandler }){
 
-    const {ref, inView} = useInView({ threshold: 0.4 });
+    const {ref, inView} = useInView({ threshold: 0.8 });
 
     const homeInternalRefHandler = () => {
         homeRefHandler(inView)

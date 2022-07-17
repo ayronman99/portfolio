@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
  const SkillsHolder = ({initial, whileInView, viewport, srcImg, altTxt, imgClxNm}) => {
     return (
-        <motion.div className="col"
+        <motion.div className="col-4"
             initial={initial}
             whileInView={whileInView}
             viewport={viewport}

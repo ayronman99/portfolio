@@ -34,12 +34,12 @@ const WorksHolder = ({imgSrc, worksAltTxt, workDesc, workSrc, workSite}) => {
                             </a>
                             <div className="card-body">
                                 <p className="card-text">{workDesc}</p>
-                                <div className="row row-cols-1 row-cols-md-1 g-1">
-                                 <div className="col-1"></div>
-                                    <a href={workSite} target="_blank" className="col-4 btn btn-primary" role="button">View Site</a>
-                                    <div className="col-2"></div>
-                                    <a href={workSrc} target="_blank" className="col-4 btn btn-secondary" role="button">See Code</a>
-                                    <div className="col-1"></div>
+                                <div className="d-flex justify-content-sm-center row row-cols-1 row-cols-md-1 g-1">
+                                 {/* <div className="col-1"></div> */}
+                                    <a href={workSite} target="_blank" className="col-sm-auto btn btn-primary" role="button">View Site</a>
+                                    {/* <div className="col-2"></div> */}
+                                    <a href={workSrc} target="_blank" className="col-sm-auto btn btn-secondary" role="button">See Code</a>
+                                    {/* <div className="col-1"></div> */}
 
                                 </div>
                                

@@ -43,8 +43,8 @@ export default function NavbarTop({
           <span className="navbar-toggler-icon">
           </span>
         </button>
-        <div className={`navbar-collapse collapse  ${clicked && ""}`} id="navbarSupportedContent">
-          <ul className="navbar-nav nav-pills me-auto mb-2 mb-lg-0">
+        <div className={`navbar-collapse collapse justify-content-end ${clicked && ""}`} id="navbarSupportedContent">
+          <ul className="navbar-nav nav-pills">
             
               <li className="nav-item">
                 <a className={homeSpyScroll} href="#home" onClick={navClicked}>Home</a>

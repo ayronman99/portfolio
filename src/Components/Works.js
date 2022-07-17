@@ -23,7 +23,7 @@ const worksVariants = {
 
 export default function Works({worksRefHandler}) {
 
-    const { ref, inView } = useInView({threshold: .25});
+    const { ref, inView } = useInView({threshold: .5});
 
     const worksInternalRefHandler = () => {
         worksRefHandler(inView);
