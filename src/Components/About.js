@@ -30,7 +30,29 @@ export default function About({aboutRefHandler}){
 
     return (
     <div ref={ref} id="about"  className="about container-fluid row row-cols-1 row-cols-sm-2">
+
+                    
         <div className="col">
+                         
+            <motion.div 
+            className="about-sales"
+            initial={{x: "100%"}}
+            whileInView={{ x: 0 }}
+            viewport={{ once: true }}
+            >       
+            
+            <h3 className="mb-3"> About </h3>
+            
+                    <p>
+                    Hi there again! A little about me introduction. I am a self-taught web dev, I have a degree in Computer Techonology. I studied mostly hardware stuff and little in the software area but I am really passionate about software. </p>
+
+                    <p>That’s why I decided to pursue a career path and study it on my own. I really love writing code and seeing it’s sweet result. Though, it’s not always smooth sailing. The bitter-sweet ride in this area of expertise is what really allures me!</p>
+
+                    <p>
+                    Whether you're looking to attract prospect and potential clients or just show the world your masterpiece. With my skillset I can help you in creating your dream website.
+                    </p>
+            </motion.div>
+
             <motion.div 
             className="quote-container"
             initial={{x: "-100%"}}
@@ -44,22 +66,6 @@ export default function About({aboutRefHandler}){
                     
                     <p className="quote-author"> 
                             — Frank Smith
-                    </p>
-            </motion.div>
-
-            <motion.div 
-            className="about-sales"
-            initial={{x: "100%"}}
-            whileInView={{ x: 0 }}
-            viewport={{ once: true }}
-            >
-                    <p>
-                    Hi there again! A little about me introduction. I am a self-taught web dev, I have a degree in Computer Techonology. I studied mostly hardware stuff and little in the software area but I am really passionate about software. </p>
-
-                    <p>That’s why I decided to pursue a career path and study it on my own. I really love writing code and seeing it’s sweet result. Though, it’s not always smooth sailing. The bitter-sweet ride in this area of expertise is what really allures me!</p>
-
-                    <p>
-                    Whether you're looking to attract prospect and potential clients or just show the world your masterpiece. With my skillset I can help you in creating your dream website.
                     </p>
             </motion.div>
         </div >

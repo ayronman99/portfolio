@@ -30,6 +30,10 @@ export default function Contacts({contactsRefHandler}){
                     viewport={{ once: true }}
                   > Let's work together! </motion.h3>
 
+                  <p>
+                    Get in touch with me thru email!
+                  </p>
+
                   <div className="intro-contacts mb-3">
                     
                   <motion.img 
@@ -45,6 +49,11 @@ export default function Contacts({contactsRefHandler}){
                     </p>
                     
                 </div>
+
+                    <p>
+                        Or you can reach me at my social links below:
+                    </p>
+
                <div className="social-media container d-flex justify-content-center">
                 <div className="social-holder row row-cols-sm-2 row-cols-md-4 w-50">
                      <motion.div className="col"

@@ -40,7 +40,7 @@ export default function NavbarTop({
               <img className="img-fluid" src={myLogo} alt="Lee's brand logo"/>
             </a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon">
+          <span className={`${navbarBg && 'navbar-toggler-icon'}`}>
           </span>
         </button>
         <div className={`navbar-collapse collapse justify-content-end ${clicked && ""}`} id="navbarSupportedContent">
@@ -56,7 +56,7 @@ export default function NavbarTop({
                 <a className={worksSpyScroll} href="#works" onClick={navClicked}>Works</a>
               </li>
               <li className="nav-item">
-                <a className={contactsSpyScroll} href="#contacts" onClick={navClicked}>Contacts</a>
+                <a className={contactsSpyScroll} href="#contacts" onClick={navClicked}>Contact Me!</a>
               </li>
            
           </ul>

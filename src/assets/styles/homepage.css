@@ -4,7 +4,6 @@
   background-size: cover;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
-  color: #fff;
 }
 .home-page h2 {
   font-size: 2rem;
@@ -77,8 +76,6 @@
   .center-logo {
     width: 350px;
   }
-}
-@media screen and (min-width: 768px) {
   .intro-text p {
     width: 50%;
   }

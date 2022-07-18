@@ -1,7 +1,7 @@
 
 
 .about {
-    color: rgb(224, 216, 216);
+    // color: rgb(224, 216, 216);
     // border: 1px dotted transparent;
     padding-top: 60px;
     margin:0;
@@ -17,6 +17,7 @@
 }
 .about-sales{
     margin: auto;
+    margin-top: 3rem;
     width: 90%;
 }
 
@@ -38,5 +39,13 @@
     .mongo{
         border-radius: 2rem;
         background-color: rgba(218, 225, 231, 0.788);
+    }
+}
+
+
+@media screen and (min-width: 1400px){
+    .about-sales{
+        font-weight: 400;
+        font-size: 1.25rem;
     }
 }
