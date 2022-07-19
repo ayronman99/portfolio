@@ -80,7 +80,7 @@ export default function About({aboutRefHandler}){
                             viewport={{ once: true }}
                             srcImg={NODEJS}
                             altTxt={'nodejs-logo'}
-                            imgClxNm={"img-thumbnail"}
+                            imgClxNm={"img-fluid"}
                         />
 
                         <SkillsHolder
@@ -115,7 +115,7 @@ export default function About({aboutRefHandler}){
                                 viewport={{ once: true }}
                                 srcImg={MONGODB}
                                 altTxt={'mongodb-logo'}
-                                imgClxNm={"img-thumbnail"}
+                                imgClxNm={"img-fluid"}
                             />
                         <div className="col-4">
                             </div>
