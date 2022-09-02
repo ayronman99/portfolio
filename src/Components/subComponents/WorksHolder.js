@@ -22,7 +22,7 @@ const WorksHolder = ({imgSrc, worksAltTxt, workDesc, workSrc, workSite}) => {
         <motion.div 
                         className="col m-2 p-0"
                         whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
+                        whileTap={{ scale: 1 }}
                         variants={worksVariants}
                         initial={"offscreen"}
                         whileInView={"onscreen"}

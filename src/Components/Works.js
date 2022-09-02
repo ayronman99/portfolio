@@ -4,6 +4,9 @@ import { faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import WorksHolder from "./subComponents/WorksHolder";
+import TodoListImg from '../assets/images/JPG/todolist.JPG'
+import WCampImg from '../assets/images/JPG/WelpCamp.JPG'
+import ColorPaletteImg from '../assets/images/JPG/colorpalt.JPG'
 import '../assets/styles/works.css';
 
 const worksVariants = {
@@ -50,33 +53,33 @@ export default function Works({worksRefHandler}) {
 
 
                     <WorksHolder 
-                        imgSrc={"https://t2.genius.com/unsafe/276x276/https%3A%2F%2Fimages.genius.com%2F9b98cc2c1f1d0be4ecc88ba0f8d80851.350x350x1.jpg"}
-                        worksAltTxt={"Ben&Ben project"}
-                        workDesc={"Some quick example text to build on the card title and make up the bulk of the card's content."}
-                        workSite={"https://www.google.com"}
-                        workSrc={"https://www.github.com"}
+                        imgSrc={TodoListImg}
+                        worksAltTxt={"To Do List app"}
+                        workDesc={"A quick web app you can use to list the things you need to do! Made with Reactjs, you can easily note and list your todos."}
+                        workSite={"https://ayronman99.github.io/todo-list/"}
+                        workSrc={"https://github.com/ayronman99/todo-list"}
                     />
 
                     <WorksHolder 
-                        imgSrc={"https://t2.genius.com/unsafe/327x327/https%3A%2F%2Fimages.genius.com%2Ff15065ef66cd717c267d3f2e37313bc1.1000x1000x1.jpg"}
-                        worksAltTxt={"Dawn FM"}
-                        workDesc={"Some quick example text to build on the card title and make up the bulk of the card's content."}
-                        workSite={"https://www.youtube.com"}
-                        workSrc={"https://www.github.com"}
+                        imgSrc={WCampImg}
+                        worksAltTxt={"WelpCamp"}
+                        workDesc={"A fullstack project utilizing Node.js, MongoDB, ExpressJS, Mongoose, Passport and Cloudinary. A place where you can add your camping experience and show it to the world!"}
+                        workSite={"https://evening-everglades-74796.herokuapp.com/"}
+                        workSrc={"https://github.com/ayronman99/WelpCamp"}
                     />
 
                     <WorksHolder 
-                        imgSrc={"https://t2.genius.com/unsafe/284x284/https%3A%2F%2Fimages.genius.com%2Fee17f873c76c455455e879e3def486f8.1000x1000x1.jpg"}
-                        worksAltTxt={"Smithereens"}
-                        workDesc={"Some quick example text to build on the card title and make up the bulk of the card's content."}
-                        workSite={"https://www.facebook.com"}
-                        workSrc={"https://www.github.com"}
+                        imgSrc={ColorPaletteImg}
+                        worksAltTxt={"Color Palette App"}
+                        workDesc={"Sometimes it's hard to pick a group of colors you want to use. That's why this color palette is made!. Easily pick or create your own palette of colors!"}
+                        workSite={"https://ayronman99.github.io/color-palette-react/"}
+                        workSrc={"https://github.com/ayronman99/color-palette-react"}
                     />
 
                 </div>
             </div>
 
-            <div className="see-more d-flex justify-content-center flex-row align-items-center">
+            {/* <div className="see-more d-flex justify-content-center flex-row align-items-center">
                 <motion.p className="me-3 mt-2"
                     initial={{x: '-100%'}}
                     whileInView={{x: 0, transition: { type: "spring", damping: 5 }}}
@@ -95,7 +98,7 @@ export default function Works({worksRefHandler}) {
                        <FontAwesomeIcon icon={faChevronCircleRight} />
                         </span>
                </motion.a>
-            </div>
+            </div> */}
         </div>
 
     )
