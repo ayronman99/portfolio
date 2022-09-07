@@ -46,7 +46,7 @@ export default function About({aboutRefHandler}){
                     <p>
                     Hi there again! A little about me introduction. I am a self-taught web dev, I have a degree in Computer Techonology. I studied mostly hardware stuff and little in the software area but I am really passionate about software. </p>
 
-                    <p>That’s why I decided to pursue a career path and study it on my own. I really love writing code and seeing it’s sweet result. Though, it’s not always smooth sailing. The bitter-sweet ride in this area of expertise is what really allures me!</p>
+                    <p>That’s why I decided to pursue web dev career path and study it on my own. I really love writing code and seeing it’s sweet result. Though, it’s not always smooth sailing. The bitter-sweet ride in the world of software development is what really allures me!</p>
 
                     <p>
                     Whether you're looking to attract prospect and potential clients or just show the world your masterpiece. With my skillset I can help you in creating your dream website.

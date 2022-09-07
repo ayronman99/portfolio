@@ -42,7 +42,7 @@ export default function HomePage({ homeRefHandler }){
                                     animate={{x: 0}}
                                     transition={{delay: 0.5}}
                                     >
-                                        I am your web developer! And I am immensely fond technology and innovative ideas. Know more about my skills below to know how I can help! 
+                                        I am a web developer! And I am immensely fond technology and innovative ideas. Know more about my skills below to know how I can help! 
                                     </motion.p>
                     </div>
                 </div>

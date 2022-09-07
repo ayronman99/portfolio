@@ -61,7 +61,7 @@ export default function Contacts({contactsRefHandler}){
                          whileInView={{ opacity: 1, transition: {delay: .25}}}
                          viewport={{ once: true }}
                      >
-                            <a className="linkedIn" href="https://www.linkedin.com/in/lee-lacay-5564b51a4/" target="_blank">
+                            <a className="linkedIn" href="www.linkedin.com/in/LeeLacay" target="_blank">
                              <FontAwesomeIcon icon={faLinkedin} />
                             </a>
                         </motion.div>
@@ -91,7 +91,7 @@ export default function Contacts({contactsRefHandler}){
                          whileInView={{ opacity: 1, transition: {delay: .4}}}
                          viewport={{ once: true }}
                      >
-                            <a className="facebook" href="https://fb.me/ret.kuzan.aokiji" target="_blank">
+                            <a className="facebook" href="https://m.me/ret.kuzan.aokiji" target="_blank">
                              <FontAwesomeIcon icon={faFacebook} />
                             </a> 
                         </motion.div>
