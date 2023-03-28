@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1aeba4c5.css",
-    "main.js": "/portfolio/static/js/main.98de5aea.js",
+    "main.js": "/portfolio/static/js/main.bf5c3d2b.js",
     "static/js/787.68dbee1e.chunk.js": "/portfolio/static/js/787.68dbee1e.chunk.js",
+    "static/media/tsn.png": "/portfolio/static/media/tsn.86a23917c9a72042c888.png",
     "static/media/js-logo.png": "/portfolio/static/media/js-logo.489572f92f0d9e486794.png",
     "static/media/react-logo.png": "/portfolio/static/media/react-logo.3101bf00a848484d7370.png",
     "static/media/newEnm.png": "/portfolio/static/media/newEnm.ca3dabd7939168ee7ecf.png",
     "static/media/colorpalt.JPG": "/portfolio/static/media/colorpalt.f99ba52c4dacb33ecdb9.JPG",
-    "static/media/WelpCamp.JPG": "/portfolio/static/media/WelpCamp.88356e9bab9e71dc2670.JPG",
     "static/media/todolist.JPG": "/portfolio/static/media/todolist.b34a9790c4e7a6833b73.JPG",
     "static/media/nodejs.png": "/portfolio/static/media/nodejs.c2e22c634a7336cbe298.png",
     "static/media/css3.png": "/portfolio/static/media/css3.20964f8ab15d5feee6f3.png",
@@ -19,11 +19,11 @@
     "index.html": "/portfolio/index.html",
     "static/media/endless-constellation-og.svg": "/portfolio/static/media/endless-constellation-og.f701ac7876618c57d1b6.svg",
     "main.1aeba4c5.css.map": "/portfolio/static/css/main.1aeba4c5.css.map",
-    "main.98de5aea.js.map": "/portfolio/static/js/main.98de5aea.js.map",
+    "main.bf5c3d2b.js.map": "/portfolio/static/js/main.bf5c3d2b.js.map",
     "787.68dbee1e.chunk.js.map": "/portfolio/static/js/787.68dbee1e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1aeba4c5.css",
-    "static/js/main.98de5aea.js"
+    "static/js/main.bf5c3d2b.js"
   ]
 }
