@@ -61,7 +61,7 @@ export default function Contacts({contactsRefHandler}){
                          whileInView={{ opacity: 1, transition: {delay: .25}}}
                          viewport={{ once: true }}
                      >
-                            <a className="linkedIn" href="www.linkedin.com/in/LeeLacay" target="_blank">
+                            <a className="linkedIn" href="https://www.linkedin.com/in/leelacay/" target="_blank">
                              <FontAwesomeIcon icon={faLinkedin} />
                             </a>
                         </motion.div>

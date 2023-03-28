@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import WorksHolder from "./subComponents/WorksHolder";
 import TodoListImg from '../assets/images/JPG/todolist.JPG'
-import WCampImg from '../assets/images/JPG/WelpCamp.JPG'
+import TSN from '../assets/images/JPG/tsn.png'
 import ColorPaletteImg from '../assets/images/JPG/colorpalt.JPG'
 import '../assets/styles/works.css';
 
@@ -61,11 +61,11 @@ export default function Works({worksRefHandler}) {
                     />
 
                     <WorksHolder 
-                        imgSrc={WCampImg}
-                        worksAltTxt={"WelpCamp"}
-                        workDesc={"A fullstack project utilizing Node.js, MongoDB, ExpressJS, Mongoose, Passport and Cloudinary. A place where you can add your camping experience and show it to the world!"}
-                        workSite={"https://evening-everglades-74796.herokuapp.com/"}
-                        workSrc={"https://github.com/ayronman99/WelpCamp"}
+                        imgSrc={TSN}
+                        worksAltTxt={"The Social Network"}
+                        workDesc="Simple Social-like networking site madde using React + Typescript. Utilizing libraries like react-query, MUI, and axios."
+                        workSite="https://ayronman99.github.io/tsn"
+                        workSrc="https://github.com/ayronman99/tsn"
                     />
 
                     <WorksHolder 
