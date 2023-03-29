@@ -75,26 +75,6 @@ export default function Contacts({contactsRefHandler}){
                                 <FontAwesomeIcon icon={faGithub} />
                                 </a>
                         </motion.div>
-
-                        <motion.div className="col"
-                         initial={{ opacity: 0 }}
-                         whileInView={{ opacity: 1, transition: {delay: .35}}}
-                         viewport={{ once: true }}
-                     >
-                           <a className="twitter" href="https://twitter.com/AyronMan99" target="_blank">
-                             <FontAwesomeIcon icon={faTwitter} />
-                            </a>
-                        </motion.div>
-
-                        <motion.div className="col"
-                         initial={{ opacity: 0 }}
-                         whileInView={{ opacity: 1, transition: {delay: .4}}}
-                         viewport={{ once: true }}
-                     >
-                            <a className="facebook" href="https://m.me/ret.kuzan.aokiji" target="_blank">
-                             <FontAwesomeIcon icon={faFacebook} />
-                            </a> 
-                        </motion.div>
                 </div>
                     
                </div>

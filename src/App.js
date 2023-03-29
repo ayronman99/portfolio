@@ -57,7 +57,7 @@ function App() {
           <Contacts contactsRefHandler={contactsRefHandler}/>
 
      <div className='footer sticky-bottom mt-3'>
-        Copyright&copy; <b>Lee</b> 2022  
+        Copyright&copy; <b>Lee</b> 2023  
      </div>
    </div>
   );

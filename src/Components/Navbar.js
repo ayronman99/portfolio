@@ -58,7 +58,9 @@ export default function NavbarTop({
               <li className="nav-item">
                 <a className={contactsSpyScroll} href="#contacts" onClick={navClicked}>Contact Me!</a>
               </li>
-           
+              <li className="nav-item">
+                <a className="nav-link" href="https://drive.google.com/file/d/1yTsjEEzksZ2fMTUv-p-tkEcWITtWb-vW/view?usp=share_link" onClick={navClicked} target="_blank">Résumé/CV</a>
+              </li>
           </ul>
         </div>
       </div>
