@@ -78,27 +78,6 @@ export default function Works({worksRefHandler}) {
 
                 </div>
             </div>
-
-            {/* <div className="see-more d-flex justify-content-center flex-row align-items-center">
-                <motion.p className="me-3 mt-2"
-                    initial={{x: '-100%'}}
-                    whileInView={{x: 0, transition: { type: "spring", damping: 5 }}}
-                    viewport={{ once: true }}
-                > 
-                    See More  
-               </motion.p>
-
-               <motion.a 
-                 href="#"
-                 initial={{x: '-100%'}}
-                 whileInView={{x: 0, rotate: 360, transition: { type: "spring", damping: 3 }}}
-                 viewport={{ once: true, amount: 0.7 }}
-               > 
-                <span className="chev-right-1">
-                       <FontAwesomeIcon icon={faChevronCircleRight} />
-                        </span>
-               </motion.a>
-            </div> */}
         </div>
 
     )
